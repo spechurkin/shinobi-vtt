@@ -1,0 +1,527 @@
+<div class="shinobi-shell">
+        <nav class="sheet-toolbar" aria-label="{{localize 'SHINOBI.ui.sheetActions'}}">
+                {{#unless isVehicle}}
+                        <button type="button" data-action="page" data-page="front" class="{{#if front}}selected{{/if}}">
+                                01 ·
+                                {{localize "SHINOBI.ui.character"}}
+                        </button>
+                        <button type="button" data-action="page" data-page="back" class="{{#if back}}selected{{/if}}">02
+                                ·
+                                {{localize "SHINOBI.ui.equipment"}}
+                        </button>
+                        <button type="button" data-action="page" data-page="cyber" class="{{#if cyber}}selected{{/if}}">
+                                03 · {{localize "SHINOBI.ui.network"}}
+                        </button>{{/unless}}
+                <button type="button" data-action="library" title="{{localize 'SHINOBI.ui.catalogTitle'}}"><i
+                        class="fa-solid fa-box-archive"></i> {{localize "SHINOBI.ui.catalog"}}
+                </button>
+                <button type="button" data-action="tools"><i class="fa-solid fa-dice"></i> {{localize
+                        "SHINOBI.ui.tools"}}</button>
+        </nav>
+        <div class="shinobi-scroll">
+                {{#if isVehicle}}
+                        <header class="vehicle-heading"><img src="{{actor.img}}" data-action="editImage" data-edit="img"
+                                                             alt="{{localize 'SHINOBI.ui.transport'}}">
+                                <div><small>{{localize "SHINOBI.ui.shinobiTransport"}}</small><input type="text"
+                                                                                                     name="name"
+                                                                                                     value="{{actor.name}}"
+                                                                                                     aria-label="{{localize
+                                                                                                             'SHINOBI.ui.name'}}">
+                                </div>
+                        </header>
+                        <div class="paper-grid"><label class="box">{{localize "SHINOBI.fields.size"}}<select
+                                name="system.size">{{selectOptions sizes
+                                                                   valueAttr="value"
+                                                                   labelAttr="label"
+                                                                   selected=system.size}}</select></label><label
+                                class="box">{{localize "SHINOBI.fields.speed"}}<select
+                                name="system.speed">{{selectOptions speeds valueAttr="value"
+                                                                    labelAttr="label"
+                                                                    selected=system.speed}}</select></label><label
+                                class="box">{{localize "SHINOBI.fields.price"}}<input type="number" name="system.price"
+                                                                                      value="{{system.price}}"
+                                                                                      min="0"></label><label
+                                class="box">{{localize "SHINOBI.ui.armor"}}<input type="checkbox"
+                                                                                  name="system.armored" {{checked
+                                        system.armored}}></label></div>
+                        <section class="box"><h2>{{localize "SHINOBI.ui.damage"}} · {{d.label}}</h2>
+                                <div class="inline-fields"><label>{{localize "SHINOBI.ui.damage"}}<input
+                                        name="system.damage.value" type="number"
+                                        value="{{system.damage.value}}" min="0"></label><span>{{localize
+                                        "SHINOBI.fields.stop"}}: {{d.stop}}</span><span>{{localize
+                                        "SHINOBI.fields.destroy"}}: {{d.destroy}}</span>
+                                        <button type="button" data-action="damage">{{localize
+                                                "SHINOBI.ui.receiveDamage"}}</button>
+                                </div>
+                        </section>
+                        <label class="box">{{localize "SHINOBI.fields.crew"}}<textarea
+                                name="system.crew">{{system.crew}}</textarea></label>
+                        <section class="box prose-field"><h2>{{localize "SHINOBI.ui.notes"}}</h2>
+                                {{#if editable}}
+                                        <prose-mirror class="shinobi-prose-mirror" name="system.notes"
+                                                      value="{{source.notes}}"
+                                                      editable="true" toggled="false"
+                                                      height="260">{{{notesHTML}}}</prose-mirror>
+                                {{else}}
+                                        <div class="shinobi-prose-display">{{{notesHTML}}}</div>
+                                {{/if}}
+                        </section>
+                {{else}}
+                        <section class="sheet-page {{#unless front}}hidden{{/unless}}" data-sheet-page="front">
+                                <div class="front-top">
+                                        <div class="identity-grid">
+                                                <label class="box identity">{{localize "SHINOBI.ui.name"}}<input
+                                                        type="text" name="name" value="{{actor.name}}"
+                                                        placeholder="{{localize 'SHINOBI.ui.namePlaceholder'}}"></label>
+                                                <label class="box identity">{{localize "SHINOBI.ui.concept"}}<input
+                                                        type="text" name="system.concept"
+                                                        value="{{system.concept}}"
+                                                        placeholder="{{localize 'SHINOBI.ui.concept'}}"></label>
+                                                <label class="box identity">{{localize "SHINOBI.ui.clothing"}}<textarea
+                                                        name="system.clothing">{{system.clothing}}</textarea></label>
+                                                <label class="box identity">{{localize "SHINOBI.ui.trait"}}<textarea
+                                                        name="system.trait">{{system.trait}}</textarea></label>
+                                                <label class="box identity">{{localize "SHINOBI.ui.motivation"}}
+                                                        <textarea
+                                                                name="system.motivation">{{system.motivation}}</textarea></label>
+                                                <label class="box identity">{{localize "SHINOBI.ui.problem"}}<textarea
+                                                        name="system.problem">{{system.problem}}</textarea></label>
+                                        </div>
+                                        <aside class="sheet-brand" aria-label="{{localize 'TYPES.Actor.character'}}">
+                                                <span>Ш</span><span>И</span><span>Н</span><span>О</span><span>Б</span><span>И</span><img
+                                                src="{{actor.img}}" data-action="editImage" data-edit="img"
+                                                title="{{localize 'SHINOBI.ui.portraitTitle'}}"
+                                                alt="{{localize 'SHINOBI.ui.portraitAlt'}}"></aside>
+                                        <div class="skills-column">
+                                                <label class="box concept-skill">{{localize "SHINOBI.ui.conceptSkill"}}
+                                                        <select name="system.conceptSkill">
+                                                                <option value="">{{localize
+                                                                        "SHINOBI.ui.notSelected"}}</option>{{selectOptions
+                                                                skillOptions valueAttr="value"
+                                                                labelAttr="label"
+                                                                selected=system.conceptSkill}}
+                                                        </select></label>
+                                                <section class="box ruled">
+                                                        <h2>{{localize "SHINOBI.ui.skills"}}
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemCreate" data-type="skill"
+                                                                        title="{{localize 'SHINOBI.ui.addSkill'}}">+
+                                                                </button>
+                                                        </h2>
+                                                        {{#each skills}}
+                                                                <div class="ruled-row" {{#unless
+                                                                        blank}}data-item-id="{{id}}"
+                                                                     draggable="true"{{/unless}}><span
+                                                                        class="row-number">{{index}}</span>{{#if blank}}
+                                                                        <span class="blank-line"></span>{{else}}
+                                                                        <button type="button" class="text-button"
+                                                                                data-action="itemUse"
+                                                                                title="{{localize
+                                                                                        'SHINOBI.ui.checkSkill'}}">{{name}}</button>
+                                                                        <button type="button" class="icon-button"
+                                                                                data-action="itemEdit"
+                                                                                title="{{localize 'SHINOBI.ui.edit'}}">
+                                                                                <i class="fa-solid fa-pen"></i></button>
+                                                                        <button type="button" class="icon-button"
+                                                                                data-action="itemDelete"
+                                                                                title="{{localize'SHINOBI.ui.delete'}}">
+                                                                                ×
+                                                                        </button>{{/if}}</div>{{/each}}
+                                                </section>
+                                        </div>
+                                        <section class="box augmentations ruled">
+                                                <h2>{{localize "SHINOBI.ui.augmentations"}} <span>{{localize
+                                                        "SHINOBI.ui.class"}}</span>
+                                                        <button type="button" class="icon-button"
+                                                                data-action="itemCreate" data-type="augmentation"
+                                                                title="{{localize 'SHINOBI.ui.addAugmentation'}}">+
+                                                        </button>
+                                                </h2>
+                                                {{#each augmentations}}
+                                                        <div class="ruled-row" {{#unless blank}}data-item-id="{{id}}"
+                                                             draggable="true"{{/unless}}>
+                                                                <span class="row-number">{{index}}</span>{{#if blank}}
+                                                                <span class="blank-line"></span><span>[ &nbsp; ]</span>{{else}}
+                                                                <button type="button" class="text-button {{#unless
+                                                                        system.active}}inactive{{/unless}}"
+                                                                        data-action="itemEdit">{{name}}</button>
+                                                                <button type="button" class="grade"
+                                                                        data-action="itemToggle" data-field="active"
+                                                                        title="{{localize 'SHINOBI.ui.toggle'}}">
+                                                                        [ {{system.class}} ]
+                                                                </button>
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemDelete"
+                                                                        title="{{localize 'SHINOBI.ui.delete'}}">×
+                                                                </button>{{/if}}</div>{{/each}}
+                                        </section>
+                                </div>
+                                <section class="box combat-box">
+                                        <h2>{{localize "SHINOBI.ui.combat"}} <span class="combat-actions"><button
+                                                type="button" data-action="check">{{localize
+                                                "SHINOBI.ui.check"}}</button><button
+                                                type="button" data-action="unarmed">{{localize
+                                                "SHINOBI.ui.unarmed"}}</button><button type="button"
+                                                                                       data-action="damage">{{localize
+                                                "SHINOBI.ui.receiveDamage"}}</button></span>
+                                        </h2>
+                                        <table class="weapons-table">
+                                                <thead>
+                                                <tr>
+                                                        <th>{{localize "SHINOBI.ui.weapon"}}</th>
+                                                        <th>{{localize "SHINOBI.ui.damage"}}</th>
+                                                        <th>{{localize "SHINOBI.ui.range"}}</th>
+                                                        <th>{{localize "SHINOBI.ui.magazine"}}</th>
+                                                        <th>{{localize "SHINOBI.ui.notes"}}</th>
+                                                        <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>{{#each weapons}}
+                                                        <tr {{#unless blank}}data-item-id="{{id}}"
+                                                                draggable="true"{{/unless}}>{{#if blank}}
+                                                                <td colspan="6" class="blank-weapon">&nbsp;</td>{{else}}
+                                                                <td>
+                                                                        <button type="button" class="text-button"
+                                                                                data-action="itemUse"
+                                                                                title="{{localize
+                                                                                        'SHINOBI.ui.attack'}}">{{name}}</button>
+                                                                </td>
+                                                                <td>{{system.damage}}</td>
+                                                                <td>{{range}} {{localize "SHINOBI.units.meter"}}</td>
+                                                                <td>{{#if system.usesAmmo}}
+                                                                        <div class="magazine"><input
+                                                                                aria-label="{{localize
+                                                                                        'SHINOBI.ui.ammoInMagazine'}}"
+                                                                                type="number"
+                                                                                data-item-field="magazine.value"
+                                                                                value="{{system.magazine.value}}"
+                                                                                min="0"><span>/ {{system.magazine.max}}</span>
+                                                                                <button type="button"
+                                                                                        class="icon-button"
+                                                                                        data-action="reload"
+                                                                                        title="{{localize
+                                                                                                'SHINOBI.ui.reload'}}">↻
+                                                                                </button>
+                                                                        </div>{{else}}—{{/if}}</td>
+                                                                <td class="weapon-notes">{{system.notes}}{{#if
+                                                                        system.destroyed}}
+                                                                        · {{localize
+                                                                        'SHINOBI.status.broken'}}{{/if}}</td>
+                                                                <td>
+                                                                        <div class="weapon-actions">
+                                                                                <button type="button"
+                                                                                        class="icon-button"
+                                                                                        data-action="itemEdit"
+                                                                                        title="{{localize
+                                                                                                'SHINOBI.ui.edit'}}">⋯
+                                                                                </button>
+                                                                                <button type="button"
+                                                                                        class="icon-button"
+                                                                                        data-action="itemDelete"
+                                                                                        title="{{localize
+                                                                                                'SHINOBI.ui.delete'}}">×
+                                                                                </button>
+                                                                        </div>
+                                                                </td>{{/if}}</tr>{{/each}}</tbody>
+                                        </table>
+                                        <div class="damage-section">
+                                                <div class="track-label"><b>{{localize
+                                                        "SHINOBI.ui.currentDamage"}}</b><input type="number"
+                                                                                               name="system.damage.value"
+                                                                                               value="{{system.damage.value}}"
+                                                                                               min="0"
+                                                                                               aria-label="{{localize
+                                                                                                       'SHINOBI.ui.currentDamage'}}"><span
+                                                        class="state-label">{{d.severity.label}}</span></div>
+                                                <div class="circle-track">{{#each damageTrack}}
+                                                        <button type="button"
+                                                                class="circle {{#if filled}}filled{{/if}} {{#if
+                                                                        boundary}}boundary{{/if}}"
+                                                                data-action="track" data-resource="damage"
+                                                                data-value="{{value}}"
+                                                                title="{{value}} {{localize 'SHINOBI.chat.damage'}}"
+                                                                aria-label="{{value}} {{localize'SHINOBI.chat.damage'}}"
+                                                                aria-pressed="{{filled}}"></button>{{/each}}</div>
+                                                <div class="damage-legend"><span>{{localize
+                                                        "SHINOBI.ui.damageLegendStun"}}</span><span>{{localize
+                                                        "SHINOBI.ui.damageLegendWounded"}}</span><span>{{localize
+                                                        "SHINOBI.ui.damageLegendDying"}}</span><span>{{localize
+                                                        "SHINOBI.ui.damageLegendDead"}}</span>
+                                                </div>
+                                        </div>
+                                        <div class="stun-line"><b>{{localize "SHINOBI.ui.currentStun"}}</b>
+                                                <div class="circle-track">{{#each stunTrack}}
+                                                        <button type="button" class="circle {{#if filled}}filled{{/if}}"
+                                                                data-action="track"
+                                                                data-resource="stun" data-value="{{value}}"
+                                                                aria-label="{{value}} {{localize
+                                                                        'SHINOBI.messages.stunPlural'}}"
+                                                                title="{{value}} {{localize
+                                                                        'SHINOBI.messages.stunPlural'}}"
+                                                                aria-pressed="{{filled}}"></button>{{/each}}</div>
+                                                <input name="system.stun.value" type="number"
+                                                       value="{{system.stun.value}}" min="0"
+                                                       aria-label="{{localize
+                                                               'SHINOBI.ui.stun'}}"><span>/ {{system.stun.max}}</span>
+                                        </div>
+                                        <div class="inline-fields recovery"><label>{{localize "SHINOBI.ui.wounds"}}
+                                                <input type="number" name="system.wounds"
+                                                       value="{{system.wounds}}"
+                                                       min="0"></label><label>{{localize "SHINOBI.ui.skipRounds"}}
+                                                <input type="number" name="system.downRounds"
+                                                       value="{{system.downRounds}}"
+                                                       min="0"></label><label><input type="checkbox"
+                                                                                     name="system.stabilized" {{checked
+                                                        system.stabilized}}> {{localize "SHINOBI.ui.stabilized"}}
+                                        </label><label><input type="checkbox"
+                                                              name="system.incapacitated" {{checked
+                                                        system.incapacitated}}> {{localize "SHINOBI.ui.incapacitated"}}
+                                        </label>
+                                                <button type="button" data-action="recover">{{localize
+                                                        "SHINOBI.ui.recover"}}</button>
+                                                <button type="button" data-action="bleed">{{localize
+                                                        "SHINOBI.ui.bleed"}}</button>
+                                        </div>
+                                        <div class="combat-bottom">
+                                                <section>
+                                                        <h2>{{localize "SHINOBI.ui.ammo"}}
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemCreate" data-type="ammo"
+                                                                        title="{{localize 'SHINOBI.ui.addAmmo'}}">+
+                                                                </button>
+                                                        </h2>{{#each ammo}}
+                                                        <div class="ammo-row" data-item-id="{{id}}">
+                                                                <button type="button" class="text-button"
+                                                                        data-action="itemEdit">{{name}}</button>
+                                                                <input type="number" data-item-field="quantity"
+                                                                       value="{{system.quantity}}" min="0"
+                                                                       aria-label="{{localize
+                                                                               'SHINOBI.ui.spareMagazines'}}"><small>{{localize
+                                                                "SHINOBI.units.magazine"}}</small>
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemDelete"
+                                                                        title="{{localize 'SHINOBI.ui.delete'}}">×
+                                                                </button>
+                                                        </div>{{else}}
+                                                        <p class="empty">{{localize
+                                                                "SHINOBI.ui.spareMagazines"}}</p>{{/each}}<textarea
+                                                        name="system.ammoNotes"
+                                                        placeholder="{{localize
+                                                                'SHINOBI.ui.ammoNotes'}}">{{system.ammoNotes}}</textarea>
+                                                </section>
+                                                <section><h2>{{localize "SHINOBI.ui.armor"}} {{#if d.armored}}
+                                                        <span class="tag">{{localize
+                                                                "SHINOBI.status.active"}}</span>{{/if}}</h2>{{#each
+                                                        armor}}
+                                                        <div class="ruled-row" data-item-id="{{id}}">
+                                                                <button type="button" class="text-button"
+                                                                        data-action="itemEdit">{{name}}</button>
+                                                                <input type="checkbox"
+                                                                       data-item-field="equipped" {{checked
+                                                                        system.equipped}}
+                                                                       title="{{localize 'SHINOBI.ui.equipped'}}">
+                                                        </div>{{/each}}<textarea name="system.armorNotes"
+                                                                                 placeholder="{{localize
+                                                                                         'SHINOBI.ui.armorNotes'}}">{{system.armorNotes}}</textarea>
+                                                </section>
+                                        </div>
+                                </section>
+                        </section>
+                        <section class="sheet-page {{#unless back}}hidden{{/unless}}" data-sheet-page="back">
+                                <div class="back-grid">
+                                        <div class="inventory-column"><label class="box money">¥ <input type="number"
+                                                                                                        name="system.money"
+                                                                                                        value="{{system.money}}"
+                                                                                                        min="0"
+                                                                                                        aria-label="{{localize
+                                                                                                                'SHINOBI.units.yen'}}"></label><label
+                                                class="box">{{localize "SHINOBI.ui.weightless"}}<textarea
+                                                name="system.weightless">{{system.weightless}}</textarea></label>
+                                                <section class="box inventory">
+                                                        <h2>{{localize "SHINOBI.ui.inventoryEquipment"}}
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemCreate" data-type="gear"
+                                                                        title="{{localize 'SHINOBI.ui.addGear'}}">+
+                                                                </button>
+                                                        </h2>
+                                                        <div class="load-meter {{#if
+                                                                d.load.overloaded}}overloaded{{/if}}">
+                                                                <b>{{d.load.value}}
+                                                                        / {{d.load.max}}</b><span>{{#if
+                                                                d.load.immobile}}{{localize
+                                                                "SHINOBI.ui.immobile"}}{{else}}{{#if
+                                                                d.load.overloaded}}{{localize
+                                                                "SHINOBI.status.encumbered"}}{{else}}{{localize
+                                                                "SHINOBI.ui.load"}}{{/if}}{{/if}}</span></div>
+                                                        {{#each equipment}}
+                                                                <div class="inventory-row" data-item-id="{{id}}"
+                                                                     draggable="true"><input type="checkbox"
+                                                                                             data-item-field="carried"
+                                                                                             {{checked
+                                                                                                     system.carried}}title="{{localize
+                                                                                                     'SHINOBI.ui.carried'}}">
+                                                                        <button type="button" class="text-button"
+                                                                                data-action="itemEdit">{{name}}</button>
+                                                                        <input type="number" data-item-field="quantity"
+                                                                               value="{{system.quantity}}" min="0"
+                                                                               aria-label="{{localize
+                                                                                       'SHINOBI.ui.quantity'}}"><small>× {{system.slots}}</small>
+                                                                        <button type="button" class="icon-button"
+                                                                                data-action="itemDelete"
+                                                                                title="{{localize'SHINOBI.ui.delete'}}">
+                                                                                ×
+                                                                        </button>
+                                                                </div>{{else}}<p class="empty">{{localize
+                                                                "SHINOBI.library.dragHint"}}</p>{{/each}}
+                                                        <label class="extra-slots">{{localize "SHINOBI.ui.otherLoad"}}
+                                                                <input type="number" name="system.extraSlots"
+                                                                       value="{{system.extraSlots}}"
+                                                                       min="0"></label>
+                                                        <div class="movement">{{localize
+                                                                "SHINOBI.ui.movement"}} {{d.load.speed}} {{localize
+                                                                "SHINOBI.units.meter"}}<br>{{localize
+                                                                "SHINOBI.ui.actionMovement"}} {{d.load.actionSpeed}} {{localize
+                                                                "SHINOBI.units.meter"}}
+                                                        </div>
+                                                </section>
+                                        </div>
+                                        <div class="story-column"><label class="box">{{localize
+                                                "SHINOBI.ui.background"}}<textarea class="background"
+                                                                                   name="system.background">{{system.background}}</textarea></label>
+                                                <section class="box advancement"><h2>{{localize
+                                                        "SHINOBI.ui.advancement"}}</h2><select
+                                                        name="system.faction">{{selectOptions factions valueAttr="value"
+                                                                                              labelAttr="label"
+                                                                                              selected=system.faction}}</select>
+                                                        <div class="rank-title"><b>{{localize
+                                                                "SHINOBI.ui.rank"}} {{d.career.rank}}</b><span>{{d.career.title}}</span>
+                                                        </div>
+                                                        <div class="inline-fields"><label>{{localize
+                                                                "SHINOBI.ui.promo"}}<input name="system.promo"
+                                                                                           type="number"
+                                                                                           value="{{system.promo}}"></label><label>{{localize
+                                                                "SHINOBI.ui.freeCompanions"}}
+                                                                <input name="system.freeCompanions" type="number"
+                                                                       value="{{system.freeCompanions}}"
+                                                                       min="0"></label></div>
+                                                        <div class="inline-fields">
+                                                                <button type="button" data-action="promote">{{localize
+                                                                        "SHINOBI.ui.missionReward"}}</button>
+                                                                <span>{{localize "SHINOBI.ui.companionLimit"}}
+                                                                        : {{d.career.companionLimit}}</span></div>
+                                                        <label>{{localize "SHINOBI.ui.lifestyle"}}<select
+                                                                name="system.lifestyle">{{selectOptions lifestyles
+                                                                                                        valueAttr="value"
+                                                                                                        labelAttr="label"
+                                                                                                        selected=system.lifestyle}}</select></label>
+                                                        <div class="inline-fields">
+                                                                <button type="button" data-action="week">{{localize
+                                                                        "SHINOBI.ui.payWeek"}}</button>
+                                                                <span>{{localize "SHINOBI.ui.reactionModifier"}}
+                                                                        : {{reactionModifier}}</span></div>
+                                                </section>
+                                                <section class="box contacts">
+                                                        <h2>{{localize "SHINOBI.ui.contacts"}}
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemCreate" data-type="contact"
+                                                                        title="{{localize 'SHINOBI.ui.addContact'}}">+
+                                                                </button>
+                                                        </h2>{{#each contacts}}
+                                                        <div class="contact-row" data-item-id="{{id}}">
+                                                                <button type="button" class="text-button"
+                                                                        data-action="itemEdit">{{name}}</button>
+                                                                <small>{{system.relation}}</small>{{#if
+                                                                system.companion}}
+                                                                <button type="button" data-action="itemUse">
+                                                                        {{localize
+                                                                                'SHINOBI.ui.loyalty'}} {{system.loyalty}}</button>{{/if}}
+                                                                <button type="button" class="icon-button"
+                                                                        data-action="itemDelete"
+                                                                        title="{{localize 'SHINOBI.ui.delete'}}">×
+                                                                </button>
+                                                        </div>{{else}}<p class="empty">{{localize
+                                                        "SHINOBI.ui.companionsHint"}}</p>{{/each}}</section>
+                                                <section class="box prose-field"><h2>{{localize
+                                                        "SHINOBI.ui.notes"}}</h2>
+                                                        {{#if editable}}
+                                                                <prose-mirror class="shinobi-prose-mirror"
+                                                                              name="system.notes"
+                                                                              value="{{source.notes}}"
+                                                                              editable="true" toggled="false"
+                                                                              height="260">{{{notesHTML}}}</prose-mirror>
+                                                        {{else}}
+                                                                <div class="shinobi-prose-display">{{{notesHTML}}}</div>
+                                                        {{/if}}
+                                                </section>
+                                        </div>
+                                </div>
+                        </section>
+                        <section class="sheet-page {{#unless cyber}}hidden{{/unless}}" data-sheet-page="cyber">
+                                <div class="cyber-heading"><span>{{localize "SHINOBI.ui.shinobiCyber"}}</span>
+                                        <button type="button" data-action="hack">{{localize
+                                                "SHINOBI.dialogs.hack"}}</button>
+                                </div>
+                                <section class="box">
+                                        <h2>{{localize "SHINOBI.ui.cyberdecks"}}
+                                                <button type="button" class="icon-button" data-action="itemCreate"
+                                                        data-type="deck">+
+                                                </button>
+                                        </h2>{{#each decks}}
+                                        <div class="deck-row" data-item-id="{{id}}">
+                                                <button type="button" class="text-button"
+                                                        data-action="itemEdit">{{name}}</button>
+                                                <span>{{system.deckSlots}} {{localize
+                                                        "SHINOBI.ui.slots"}}</span><span>{{#if system.destroyed}}
+                                                {{localize "SHINOBI.status.burnedDeck"}}{{else}}{{localize
+                                                "SHINOBI.status.working"}}{{/if}}</span>
+                                                <button type="button" class="icon-button" data-action="itemDelete"
+                                                        title="{{localize 'SHINOBI.ui.delete'}}">×
+                                                </button>
+                                        </div>{{else}}
+                                        <p class="empty">{{localize "SHINOBI.ui.addDeckHint"}}</p>{{/each}}</section>
+                                <section class="box">
+                                        <h2>{{localize "SHINOBI.ui.programs"}}
+                                                <button type="button" class="icon-button" data-action="itemCreate"
+                                                        data-type="program">+
+                                                </button>
+                                        </h2>{{#each programs}}
+                                        <div class="deck-row" data-item-id="{{id}}">
+                                                <button type="button" class="text-button"
+                                                        data-action="itemEdit">{{name}}</button>
+                                                <span>+{{system.level}}</span><span>{{#if system.destroyed}}
+                                                {{localize "SHINOBI.status.destroyedProgram"}}{{else}}{{localize
+                                                "SHINOBI.status.workingProgram"}}{{/if}}</span>
+                                                <button type="button" class="icon-button" data-action="itemDelete"
+                                                        title="{{localize 'SHINOBI.ui.delete'}}">×
+                                                </button>
+                                        </div>{{/each}}</section>
+                                <section class="box"><h2>{{localize "SHINOBI.ui.extraTracking"}}</h2>
+                                        <div class="inline-fields"><label>{{localize "SHINOBI.ui.temporaryModifier"}}
+                                                <input type="number"
+                                                       name="system.temporaryModifier"
+                                                       value="{{system.temporaryModifier}}"></label><label>{{localize
+                                                "SHINOBI.ui.stunRecovery"}}
+                                                <input type="number" name="system.stunRecovery"
+                                                       value="{{system.stunRecovery}}"
+                                                       min="0"></label><label>{{localize "SHINOBI.ui.rankOverride"}}
+                                                <input type="number"
+                                                       name="system.rankOverride"
+                                                       value="{{system.rankOverride}}"
+                                                       min="-1"
+                                                       max="7"></label><label>{{localize "SHINOBI.ui.initiativeSide"}}
+                                                <input type="text" name="system.initiativeSide"
+                                                       value="{{system.initiativeSide}}"></label><label>{{localize
+                                                "SHINOBI.ui.loyalty"}}<input type="number"
+                                                                             name="system.loyalty"
+                                                                             value="{{system.loyalty}}"
+                                                                             min="0"
+                                                                             max="12"></label>
+                                        </div>
+                                </section>
+                        </section>
+                {{/if}}
+                <footer class="sheet-footer"><span>{{localize "SHINOBI.ui.footerTitle"}}</span><span>{{localize
+                        "SHINOBI.ui.footerAutosave"}}</span>
+                </footer>
+        </div>
+</div>

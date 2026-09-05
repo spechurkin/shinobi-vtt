@@ -1,0 +1,29 @@
+<div class="shinobi-shell">
+        <header class="library-heading">
+                <div><small>{{localize "SHINOBI.library.archive"}}</small>
+                        <h2>{{localize "SHINOBI.library.title"}}</h2></div>
+                <button type="button" data-action="generate">{{localize "SHINOBI.library.create"}}</button>
+        </header>
+        <div class="library-filters"><input type="search" data-search
+                                            placeholder="{{localize 'SHINOBI.library.searchPlaceholder'}}"
+                                            aria-label="{{localize 'SHINOBI.library.searchLabel'}}"><select data-filter
+                                                                                                            aria-label="{{localize
+                                                                                                                    'SHINOBI.library.typeLabel'}}">{{selectOptions
+                types valueAttr="value" labelAttr="label"}}</select></div>{{#if actor}}
+        <p class="library-target">{{localize "SHINOBI.library.addToSheet"}} <b>{{actor.name}}</b></p>{{else}}
+        <p class="library-target">{{localize "SHINOBI.library.dragHint"}}</p>{{/if}}
+        <div class="catalog-grid">{{#each items}}
+                <article class="catalog-card" data-catalog-id="{{_id}}" data-search="{{search}}" data-type="{{type}}"
+                         draggable="true"><img src="{{img}}" alt=""><small>{{typeLabel}}{{#if system.class}}
+                        · {{system.class}}{{/if}}</small>
+                        <h2>
+                                <button type="button" class="text-button" data-action="inspect">{{name}}</button>
+                        </h2>
+                        <footer><span>¥{{price}}</span>{{#if @root.canAdd}}
+                                <button type="button" data-action="add"
+                                        title="{{localize 'SHINOBI.library.addToList'}}">+
+                                </button>{{else}}
+                                <button type="button" data-action="inspect">{{localize
+                                        "SHINOBI.library.open"}}</button>{{/if}}</footer>
+                </article>{{/each}}</div>
+</div>

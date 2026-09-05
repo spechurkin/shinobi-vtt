@@ -1,0 +1,17 @@
+{
+  "name": "shinobi-vtt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Шиноби для Foundry VTT 14",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "build": "node tools/build-dist.mjs",
+    "build:content": "node tools/build-content.mjs",
+    "build:packs": "node tools/build-packs.mjs",
+    "check": "node tools/check.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "3.0.3"
+  }
+}

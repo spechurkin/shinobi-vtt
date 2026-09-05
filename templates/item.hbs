@@ -1,0 +1,161 @@
+<div class="shinobi-shell">
+        <div class="shinobi-scroll item-body">
+                <header class="item-heading"><img src="{{item.img}}" data-action="editImage" data-edit="img"
+                                                  alt="{{typeLabel}}">
+                        <div><small>{{typeLabel}}</small><input name="name" type="text" value="{{item.name}}"
+                                                                aria-label="{{localize 'SHINOBI.ui.name'}}">
+                        </div>
+                        <button type="button" data-action="post" title="{{localize 'SHINOBI.item.postToChat'}}"><i
+                                class="fa-solid fa-comment"></i>
+                        </button>
+                </header>
+                <div class="item-fields"><label>{{localize "SHINOBI.fields.price"}}<input type="number"
+                                                                                          name="system.price"
+                                                                                          value="{{system.price}}"
+                                                                                          min="0"></label><label>{{localize
+                        "SHINOBI.fields.quantity"}}<input type="number"
+                                                          name="system.quantity"
+                                                          value="{{system.quantity}}"
+                                                          min="0"></label><label>{{localize
+                        "SHINOBI.fields.slotsPerUnit"}}
+                        <input type="number" name="system.slots" value="{{system.slots}}" min="0"
+                               step="0.5"></label><label>{{localize "SHINOBI.ui.sourcePage"}}<input type="number"
+                                                                                                    name="system.page"
+                                                                                                    value="{{system.page}}"
+                                                                                                    min="0"></label>
+                </div>
+                <div class="inline-fields"><label><input type="checkbox" name="system.carried" {{checked
+                        system.carried}}> {{localize "SHINOBI.ui.carried"}}</label><label><input type="checkbox"
+                                                                                                 name="system.equipped" {{checked
+                                system.equipped}}>
+                        {{localize "SHINOBI.item.equipped"}}</label><label><input type="checkbox"
+                                                                                  name="system.active" {{checked
+                                system.active}}>
+                        {{localize "SHINOBI.item.active"}}</label></div>
+                {{#if isSkill}}
+                        <label>{{localize "SHINOBI.item.checkedSkill"}}<select name="system.skill">{{selectOptionsskills
+                                valueAttr="value"
+                                labelAttr="label"
+                                selected=system.skill}}</select></label>{{/if}}
+                {{#if isAug}}
+                        <div class="item-fields"><label>{{localize "SHINOBI.ui.class"}}<select
+                                name="system.class">{{selectOptions grades valueAttr="value"
+                                                                    labelAttr="label"
+                                                                    selected=system.class}}</select></label><label>{{localize
+                                "SHINOBI.item.grantsSkill"}}
+                                <select name="system.grantedSkill">{{selectOptions skills valueAttr="value"
+                                                                                   labelAttr="label"
+                                                                                   selected=system.grantedSkill}}</select></label>
+                        </div>{{/if}}
+                {{#if isWeapon}}
+                        <section class="box"><h2>{{localize "SHINOBI.ui.weapon"}}</h2><label>{{localize
+                                "SHINOBI.forms.skill"}}<select name="system.skill">{{selectOptions skills
+                                                                                                   valueAttr="value"
+                                                                                                   labelAttr="label"
+                                                                                                   selected=system.skill}}</select></label>
+                                <div class="item-fields"><label>{{localize "SHINOBI.ui.damage"}}<input type="text"
+                                                                                                       name="system.damage"
+                                                                                                       value="{{system.damage}}"
+                                                                                                       placeholder="2d6"></label><label>{{localize
+                                        "SHINOBI.item.damageType"}}<select
+                                        name="system.damageType">{{selectOptions damageTypes valueAttr="value"
+                                                                                 labelAttr="label"
+                                                                                 selected=system.damageType}}</select></label><label>{{localize
+                                        "SHINOBI.ui.range"}},
+                                        {{localize "SHINOBI.units.meter"}}<input type="number" name="system.range"
+                                                                                 value="{{system.range}}"
+                                                                                 min="0"></label><label>{{localize
+                                        "SHINOBI.item.attacksPerTurn"}}
+                                        <input type="number" name="system.attacks" value="{{system.attacks}}"
+                                               min="1"></label><label>{{localize "SHINOBI.item.hitBonus"}}
+                                        <input type="number" name="system.hitBonus" value="{{system.hitBonus}}"></label><label>{{localize
+                                        "SHINOBI.item.ammunition"}}<select
+                                        name="system.ammoType">{{selectOptions ammoTypes valueAttr="value"
+                                                                               labelAttr="label"
+                                                                               selected=system.ammoType}}</select></label><label>{{localize
+                                        "SHINOBI.item.currentMagazine"}}
+                                        <input type="number" name="system.magazine.value"
+                                               value="{{system.magazine.value}}"
+                                               min="0"></label><label>{{localize "SHINOBI.item.magazineCapacity"}}<input
+                                        type="number" name="system.magazine.max"
+                                        value="{{system.magazine.max}}"
+                                        min="1"></label></div>
+                                <div class="inline-fields"><label><input name="system.usesAmmo"
+                                                                         type="checkbox" {{checked
+                                                system.usesAmmo}}> {{localize "SHINOBI.item.usesAmmo"}}
+                                </label><label><input name="system.armorPiercing"
+                                                      type="checkbox" {{checked
+                                                system.armorPiercing}}> {{localize "SHINOBI.item.armorPiercing"}}
+                                </label><label><input name="system.laser"
+                                                      type="checkbox" {{checked
+                                                system.laser}}> {{localize "SHINOBI.item.laser"}}</label><label><input
+                                        name="system.silencer"
+                                        type="checkbox" {{checked
+                                                system.silencer}}> {{localize "SHINOBI.item.silencer"}}
+                                </label><label><input name="system.destroyed"
+                                                      type="checkbox" {{checked
+                                                system.destroyed}}> {{localize "SHINOBI.status.broken"}}</label></div>
+                        </section>{{/if}}
+                {{#if isAmmo}}
+                        <label>{{localize "SHINOBI.item.ammunitionType"}}<select name="system.ammoType">{{selectOptions
+                                ammoTypes valueAttr="value"
+                                labelAttr="label"
+                                selected=system.ammoType}}</select></label>{{/if}}
+                {{#if isDeck}}
+                        <div class="item-fields"><label>{{localize "SHINOBI.item.programSlots"}}<input
+                                name="system.deckSlots" type="number"
+                                value="{{system.deckSlots}}"
+                                min="1"></label><label><input name="system.destroyed"
+                                                              type="checkbox" {{checked
+                                        system.destroyed}}> {{localize "SHINOBI.item.deckBurned"}}</label></div>{{/if}}
+                {{#if isProgram}}
+                        <div class="item-fields"><label>{{localize "SHINOBI.item.breakerLevel"}}<input
+                                name="system.level"
+                                type="number"
+                                value="{{system.level}}"
+                                min="0"
+                                max="6"></label><label><input
+                                name="system.destroyed" type="checkbox" {{checked system.destroyed}}> {{localize
+                                "SHINOBI.item.programDestroyed"}}</label>
+                        </div>
+                        <label><input name="system.installed" type="checkbox" {{checked system.installed}}> {{localize
+                                "SHINOBI.item.installedInDeck"}}</label><label>{{localize "SHINOBI.item.cyberdeck"}}
+                        <select name="system.deckId">
+                                <option value="">{{localize "SHINOBI.ui.notSelectedFemale"}}</option>{{selectOptions
+                                decks valueAttr="value" labelAttr="label"
+                                selected=system.deckId}}</select></label>{{/if}}
+                {{#if isDrug}}
+                        <div class="item-fields"><label>{{localize "SHINOBI.item.remainingDoses"}}<input type="number"
+                                                                                                         name="system.doses"
+                                                                                                         value="{{system.doses}}"
+                                                                                                         min="0"></label><label>{{localize
+                                "SHINOBI.item.duration"}}<input
+                                type="text" name="system.duration" value="{{system.duration}}"></label></div>{{/if}}
+                {{#if isContact}}<label>{{localize "SHINOBI.item.relation"}}<input name="system.relation" type="text"
+                                                                                   value="{{system.relation}}"></label><label>{{localize
+                        "SHINOBI.item.phone"}}<input
+                        name="system.phone" type="text" value="{{system.phone}}"></label>
+                        <div class="item-fields"><label><input name="system.companion" type="checkbox" {{checked
+                                system.companion}}>
+                                {{localize "SHINOBI.item.hiredCompanion"}}</label><label>{{localize
+                                "SHINOBI.ui.loyalty"}}<input type="number" name="system.loyalty"
+                                                             value="{{system.loyalty}}" min="0" max="12"></label>
+                        </div>{{/if}}
+                <section class="box item-description"><h2>{{localize "SHINOBI.item.description"}}</h2>
+                        <div class="description-preview">{{{description}}}</div>{{#if editable}}
+                                <details>
+                                        <summary>{{localize "SHINOBI.item.editDescription"}}</summary>
+                                        <textarea name="system.description"
+                                                  class="large-text">{{system.description}}</textarea>
+                                </details>{{/if}}</section>
+                <section class="box prose-field"><h2>{{localize "SHINOBI.ui.notes"}}</h2>
+                        {{#if editable}}
+                                <prose-mirror class="shinobi-prose-mirror" name="system.notes" value="{{source.notes}}"
+                                              editable="true" toggled="false"
+                                              height="260">{{{notesHTML}}}</prose-mirror>
+                        {{else}}
+                                <div class="shinobi-prose-display">{{{notesHTML}}}</div>
+                        {{/if}}
+                </section>
+        </div>
+</div>

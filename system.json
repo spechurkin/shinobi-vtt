@@ -1,0 +1,102 @@
+{
+  "id": "shinobi-vtt",
+  "title": "Шиноби",
+  "description": "Киберпанк старой школы по игре «Шиноби».",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Emergent666"
+    },
+    {
+      "name": "HoloLight17"
+    }
+  ],
+  "esmodules": [
+    "shinobi.mjs"
+  ],
+  "styles": [
+    "styles/shinobi.css",
+    "styles/chat.css"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {},
+      "vehicle": {}
+    },
+    "Item": {
+      "skill": {},
+      "augmentation": {},
+      "weapon": {},
+      "armor": {},
+      "gear": {},
+      "ammo": {},
+      "deck": {},
+      "program": {},
+      "drug": {},
+      "service": {},
+      "contact": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "catalog",
+      "label": "Шиноби · Навыки и снаряжение",
+      "path": "packs/catalog",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Шиноби · Таблицы и генераторы",
+      "path": "packs/tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vehicles",
+      "label": "Шиноби · Транспорт",
+      "path": "packs/vehicles",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "initiative": "1d6",
+  "grid": {
+    "type": 1,
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "damage",
+  "secondaryTokenAttribute": "stun",
+  "background": "systems/shinobi-vtt/assets/cover.webp",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/shinobi-vtt/assets/cover.webp"
+    }
+  ],
+  "license": "LICENSE.md",
+  "readme": "README.md"
+}

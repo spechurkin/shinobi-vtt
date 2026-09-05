@@ -1,0 +1,119 @@
+/* Чат Шиноби вынесен в отдельный файл, чтобы сообщения не зависели от листа. */
+.chat-message {
+        background: white;
+}
+
+.chat-message .message-header {
+        color: black;
+}
+
+.chat-message .message-content {
+        color: #151515;
+}
+
+.chat-message .flavor-text,
+.chat-message .dice-roll {
+        margin: 6px 0;
+        color: #151515;
+}
+
+.chat-message .dice-roll .dice-formula {
+        border: 1px solid #c7b98f;
+        border-radius: 2px;
+        background: #f4f0e5;
+        color: #4d493f;
+        font-weight: 600;
+}
+
+.chat-message .dice-roll .dice-total {
+        border: 1px solid #b49037;
+        border-radius: 2px;
+        background: #fffdf7;
+        color: #151515;
+        font-size: 1.25em;
+        font-weight: 800;
+}
+
+.chat-message .dice-roll .dice-tooltip {
+        border: 1px solid #c7b98f;
+        background: #fffdf7;
+        color: #151515;
+}
+
+.chat-message .shinobi-chat {
+        --shinobi-chat-ink: #151515;
+        --shinobi-chat-paper: #fcfbf7;
+        --shinobi-chat-accent: #b49037;
+        padding: 10px 12px;
+        border: 1px solid #c7b98f;
+        border-left: 4px solid var(--shinobi-chat-accent);
+        border-radius: 2px 7px 2px 7px;
+        background: var(--shinobi-chat-paper);
+        color: var(--shinobi-chat-ink);
+        font-family: "Roboto", Arial, sans-serif;
+        line-height: 1.4;
+}
+
+.chat-message .shinobi-chat header {
+        margin: 0 0 8px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid currentColor;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: .02em;
+}
+
+.chat-message .shinobi-chat p {
+        margin: 5px 0;
+}
+
+.chat-message .shinobi-chat strong {
+        display: block;
+        margin: 4px 0;
+        font-size: 15px;
+        font-weight: 800;
+}
+
+.chat-message .shinobi-chat .success {
+        color: #397641;
+}
+
+.chat-message .shinobi-chat .failure {
+        color: #bc4b4b;
+}
+
+.chat-message .shinobi-chat small {
+        display: block;
+        margin-top: 8px;
+        padding-top: 6px;
+        border-top: 1px dotted #b8ad91;
+        color: #5f5a4f;
+        font-size: 11px;
+}
+
+.chat-message .shinobi-chat button[data-shinobi-damage] {
+        width: 100%;
+        margin-top: 8px;
+        border: 1px solid #928b7b;
+        border-radius: 3px;
+        background: transparent;
+        color: var(--shinobi-chat-ink);
+        padding: 5px 8px;
+        cursor: pointer;
+}
+
+.chat-message .shinobi-chat button[data-shinobi-damage]:hover {
+        background: #e8d69e;
+        border-color: var(--shinobi-chat-ink);
+}
+
+.chat-message .shinobi-chat button[data-shinobi-damage]:disabled {
+        opacity: .45;
+        cursor: default;
+}
+
+.chat-message .shinobi-chat .source {
+        margin-top: 8px;
+        color: #6c6a60;
+        font-size: 10px;
+}

@@ -1,0 +1,4424 @@
+[
+  {
+    "_id": "a39f842b4e709156",
+    "name": "Айкидо",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "aikido",
+      "page": 14,
+      "description": "<p>Японское боевое искусство, техники которого базируются на слиянии с атакой противника, перенаправлении энергии атакующего и заканчиваются болевым захватом или броском.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "aikido",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "fba8ba162def3418",
+    "name": "Будзюцу",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "bujutsu",
+      "page": 14,
+      "description": "<p>Это умение покрывает рукопашные схватки с использованием ножей, клинков и дробящего оружия.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "bujutsu",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "64fa33e575532e80",
+    "name": "Взрывчатка",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "explosives",
+      "page": 14,
+      "description": "<p>Это умение позволяет устанавливать и обезвреживать взрывчатку: мины, заряды C4 и пр.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "explosives",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c8735267df2b274c",
+    "name": "Чанбара",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "chanbara",
+      "page": 14,
+      "description": "<p>Способность атаковать в ближнем бою до трёх врагов одновременно и без штрафов атаковать цель сзади себя. Если тебе выпала чанбара — самостоятельно выбери ещё одно боевое искусство на свой вкус, но лишись за это другого умения.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "chanbara",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e76172469b0597bc",
+    "name": "Иайдо",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "iaido",
+      "page": 14,
+      "description": "<p>Способность мгновенно выхватить оружие, не тратя на это время.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "iaido",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "df1ab577fda717b5",
+    "name": "Карате",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "karate",
+      "page": 14,
+      "description": "<p>Японское боевое искусство, техники которого базируются на использовании точно нацеленных мощных ударов руками и ногами, наносимых в жизненно важные точки тела врага.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "karate",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6a0d8adc5718d7be",
+    "name": "Некоде",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "nekode",
+      "page": 14,
+      "description": "<p>Искусство использования в бою втягивающихся аугментированных когтей или когтистых рукавиц, называемых некоде</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "nekode",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "abcecb93db0ec2a3",
+    "name": "Лёгкое оружие",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "lightWeapons",
+      "page": 14,
+      "description": "<p>Способность эффективно использовать пистолеты, дробовики и автоматы.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "lightWeapons",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "82afc906c27670a0",
+    "name": "Прицеливание",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "aiming",
+      "page": 14,
+      "description": "<p>Это умение позволяет удерживать прицел на месте и увеличить свои шансы на попадание. Тот, у кого есть это умение, может целиться один, два или три раунда подряд, получая при выстреле +1/+2/+3 соответственно. Те, кто не владеют этим умением, ничего не получают от тщательного прицеливания.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "aiming",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c0db212675aaa204",
+    "name": "Тяжёлое оружие",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "heavyWeapons",
+      "page": 14,
+      "description": "<p>Использование и обслуживание крупного военного оружия — пулемётов, гранатомётов, огнемётов и массивных снайперских винтовок</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "heavyWeapons",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ebed29d1544ca22c",
+    "name": "Ловкость",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "agility",
+      "page": 14,
+      "description": "<p>Навык, показывающий насколько шиноби хорош в метании, балансировании, карабканьи, прыжках и плаваньи. Полезна как для гимнастов, так и для коммандо, штурмующих оконные проёмы.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "agility",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "feef240acc35077f",
+    "name": "Внимательность",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "awareness",
+      "page": 14,
+      "description": "<p>Способность эффективнее находить спрятанные вещи в комнате, автомобиле или на чьём-то теле, а также замечать растяжки, засады и пр.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "awareness",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "8fe51465209c69cc",
+    "name": "Скрытность",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "stealth",
+      "page": 14,
+      "description": "<p>Способность тихо передвигаться и подкрадываться к противникам, а также эффективнее прятаться и атаковать из засады.</p><p class=\"source\">Шиноби, с. 14</p>",
+      "skill": "stealth",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9a0dcc74ee8cd746",
+    "name": "Сила",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "strength",
+      "page": 14,
+      "description": "<p>Мышцы, выносливость и телосложение.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "strength",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0a1914c64cdf713d",
+    "name": "Воля",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "will",
+      "page": 14,
+      "description": "<p>Способность несмотря ни на что цепляться за жизнь. Воля позволяет шиноби эффективнее переживать ранения.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "will",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ce2b379ee5c8b23f",
+    "name": "Городское выживание",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "streetwise",
+      "page": 14,
+      "description": "<p>Этот навык позволяет персонажу эффективнее находить тихие подворотни, в которых можно спрятаться, и кратчайшие маршруты от точки А к точке B.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "streetwise",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ca2daf52196a9dbf",
+    "name": "Эксперт в химии",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "chemistry",
+      "page": 14,
+      "description": "<p>Способность определять составы разных веществ, замечать снотворное и яд в своём шампанском и точно знать под чем сейчас тот тип с расширенными зрачками.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "chemistry",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9d5eda17a02d5d4d",
+    "name": "Технологии",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "technology",
+      "page": 14,
+      "description": "<p>Способность изучить принцип работы, починить или создать сложное электронное или механическое устройство, от радио до микроволновки, от моторов и сервоприводов до роботов и компьютеров.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "technology",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "772689038e2acba4",
+    "name": "Контрбезопасность",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "security",
+      "page": 14,
+      "description": "<p>Умение справляться с замками и прочими средствами безопасности, такими как системы сигнализации, электрические заборы и датчики движения. Включает в себя установку и нахождение жучков, скрытых камер, и т.д.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "security",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "52161751f398dfed",
+    "name": "Киберпространство",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "cyberspace",
+      "page": 14,
+      "description": "<p>Умение взламывать узлы Сети, забираться в её защищённые точки и перепрограммировать устройства, подключённые к ней.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "cyberspace",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6a92e3410b570e5f",
+    "name": "Медицина",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "medicine",
+      "page": 14,
+      "description": "<p>Способность диагностировать и излечивать раны, болезни и отравления. Также включает в себя использование технологий оказания первой помощи и даёт базовые познания в генетике, фармакологии и молекулярной биологии.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "medicine",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7745c9c358bb2ba7",
+    "name": "Вождение",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "driving",
+      "page": 14,
+      "description": "<p>Способность управлять транспортом в бою или иных экстремальных ситуациях. Кроме того, персонаж с этим умением знает, как обслуживать и чинить средства передвижения.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "driving",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6aee837150909485",
+    "name": "Язык тела",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "bodyLanguage",
+      "page": 14,
+      "description": "<p>Базовая психология и способность “читать” людей.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "bodyLanguage",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c96b406590ffd2ec",
+    "name": "Обман",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "deception",
+      "page": 14,
+      "description": "<p>Позволяет лгать, обманывать и дурачить людей. Кроме того, позволяет шиноби изменять свой голос, маскироваться или притворяться другим человеком.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "deception",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "36be2d19ce4363d3",
+    "name": "Подделка документов",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "forgery",
+      "page": 14,
+      "description": "<p>Создание фальшивых ИНЧ и пропусков.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "forgery",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e4bd67254b88cef6",
+    "name": "Азартные игры",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "gambling",
+      "page": 14,
+      "description": "<p>Означает наличие у шиноби опыта и умений, позволяющих чаще выигрывать в таких играх.</p><p class=\"source\">Шиноби, с. 15</p>",
+      "skill": "gambling",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "39e6cf23621e7e92",
+    "name": "Соблазнение",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "seduction",
+      "page": 14,
+      "description": "<p>Способность эффективнее прочих соблазнять других людей.</p><p class=\"source\">Шиноби, с. 16</p>",
+      "skill": "seduction",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6b8d2b7b35681bc1",
+    "name": "Убеждение",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "persuasion",
+      "page": 14,
+      "description": "<p>Искусство убеждать и торговаться.</p><p class=\"source\">Шиноби, с. 16</p>",
+      "skill": "persuasion",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "d2d0c40b2e7e86ef",
+    "name": "Якудза",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "yakuza",
+      "page": 14,
+      "description": "<p>Ты боец японской мафии, следующий за своим “оябуном”, крёстным отцом. Ты крут, зол и очень неприятен.</p><p class=\"source\">Шиноби, с. 12</p>",
+      "skill": "yakuza",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e09c87cfa5fd1ed2",
+    "name": "Дзайбацу",
+    "type": "skill",
+    "img": "systems/shinobi-vtt/assets/icons/skill.svg",
+    "system": {
+      "key": "zaibatsu",
+      "page": 14,
+      "description": "<p>Знание корпоративных политик, и нюансов торговли акциями. Персонаж с этим умением эффективнее анализирует банковские счета и разбирается в методах ведения бизнеса, много знает о других дзайбацу. Преступникам это умение помогает в мошенничестве.</p><p class=\"source\">Шиноби, с. 16</p>",
+      "skill": "zaibatsu",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e9f508864230178d",
+    "name": "Трансформация",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "fdcca15d67c398cf",
+      "page": 17,
+      "description": "<p>Шиноби получает возможность изменить своё тело (требуется 1 минута для грубой имитации, 1 час и зеркало — для точной) чтобы в точности воссоздать облик другого человека, вплоть до мышц, роста, щетины, отпечатков пальцев и т.д.</p><p class=\"source\">Шиноби, с. 17</p>",
+      "class": "A",
+      "price": 5000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "b8a412e8fb08d25e",
+    "name": "Подкожная броня",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "subdermalArmor",
+      "page": 17,
+      "description": "<p>Подкожные ультралёгкие пластины. Дают шиноби тот же эффект, что и бронежилеты.</p><p class=\"source\">Шиноби, с. 17</p>",
+      "class": "A",
+      "price": 5000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c18e1c645db2636d",
+    "name": "Мышечная матрица",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "muscleMatrix",
+      "page": 18,
+      "description": "<p>Даёт умение сила и “+4” на броски при его проверке.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "B",
+      "price": 2000000,
+      "slots": 0,
+      "grantedSkill": "strength"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6b048dd684607bf7",
+    "name": "Ускоритель обмена веществ",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "metabolicAccelerator",
+      "page": 18,
+      "description": "<p>Раз в час на 10 минут даёт носителю возможность совершать два действия в ход. При потере носителем сознания автоматически выключается.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "B",
+      "price": 2000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "bfc03810fe901c9f",
+    "name": "Регенерация",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "regeneration",
+      "page": 18,
+      "description": "<p>Снижает время восстановления после оглушения до 10 минут и увеличивает доступное время для лечения раны до часа.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "B",
+      "price": 2000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "766eeb87698514fb",
+    "name": "Владение обеими руками",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "4257670570e92786",
+      "page": 18,
+      "description": "<p>Шиноби получает возможность использовать два разных одноручных оружия одновременно.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "f5ea92bd7025b2c4",
+    "name": "Кошачьи глаза",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "b75c2c798546eb8b",
+      "page": 18,
+      "description": "<p>Позволяют видеть при наличии минимальных источников света.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6336443f5f334ee0",
+    "name": "Глаза насекомого",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "dfe967b210652266",
+      "page": 18,
+      "description": "<p>Глаза шиноби работают в отрыве друг от друга, позволяя вести наблюдение или огонь одновременно по двум разным целям.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ada18d9a634a045e",
+    "name": "Ядовитые клыки",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "178e3edf8e6be6e8",
+      "page": 18,
+      "description": "<p>Втягивающиеся змееподобные клыки, наносящие 2d6 урона ядом, если бросок воли с модификатором “+2” пройден целью, и мгновенно убивающие в случае провала.</p><p class=\"source\">Шиноби, с. 18</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a5343692c10c526a",
+    "name": "Втягивающиеся когти",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "5e8d1dd1c3a89d80",
+      "page": 18,
+      "description": "<p>Обычно спрятаны под кожей, но могут быть мгновенно обнажены и превратиться в оружие, наносящее 2d6 урона.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9828b4d14bf98cb0",
+    "name": "Высокий болевой порог",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "painThreshold",
+      "page": 18,
+      "description": "<p>Аугментация позволяет игнорировать штрафы от ранений. Однако если раненый персонаж пытается сделать что-то, требующее больших усилий — он рискует понести дополнительные d6 урона по усмотрению рефери.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "864302bbbe575825",
+    "name": "Вторая кожа",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "c4f7d281a5417a82",
+      "page": 18,
+      "description": "<p>Шиноби защищён от огня и напалма изотермической внешней кожей. После ночного отдыха сгоревшая кожа отрастает снова.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "170337bfbeac5679",
+    "name": "Супер-руки",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "superArms",
+      "page": 18,
+      "description": "<p>Очень крепкие руки с усиленными мышцами и костями. Позволяют эффективно поднимать, крушить, гнуть и держать в захвате даже то, что для этого слабо предназначено. Аугментация даёт “+1” к попаданию в рукопашном бою и всем проверкам, связанным с подниманием, сгибанием, крушением и пр.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0bd48a4f760aa1bb",
+    "name": "Улучшенная система дыхания",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "1ee2b5e836329047",
+      "page": 18,
+      "description": "<p>Раз в день в течение 10 минут позволяет шиноби справляться с воздействием токсинов и газов. Система способна 20 минут поддерживать шиноби, который находится без сознания.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6e4f0c2194db5096",
+    "name": "Мимикрия",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "50560e1793858248",
+      "page": 18,
+      "description": "<p>Если шиноби потратит минуту на прислушивание, то сможет воспроизвести нужный голос, но только те фразы, которые он слышал. Если он будет слушать чей-либо голос в течение часа — он получает возможность полностью его имитировать.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "94704cf8de06217a",
+    "name": "Супер-ноги",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "superLegs",
+      "page": 18,
+      "description": "<p>Позволяет шиноби раз в день в течение 5 минут бежать с двойной скоростью и прыгать вверх до 6 метров и вдаль до 8 метров. Любой удар такой ногой получает “+1” к попаданию.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c70ec5495e69451d",
+    "name": "Чутьё феромонов",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "4f1b5c9797eb913b",
+      "page": 18,
+      "description": "<p>Позволяет заметить живого человека на расстоянии до 20 метров даже в толпе, а также идентифицировать его, если шиноби уже был с ним знаком.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "C",
+      "price": 1000000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "8e270717144a1ee2",
+    "name": "Гибкость",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "77d299348b755224",
+      "page": 19,
+      "description": "<p>Даёт “+2” ко всем проверкам навыков, связанным с карабканьем и способность протискиваться в очень узкие пространства.</p><p class=\"source\">Шиноби, с. 19</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "821b89d6b251d304",
+    "name": "Замедлитель обмена веществ",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "f87f8eb35c7c0388",
+      "page": 19,
+      "description": "<p>Способен замедлить обмен веществ до минимально возможного уровня, позволяя быть раненым или обходиться без воздуха вдвое дольше. Необходима успешная проверка воли каждые 10 минут, чтобы иметь возможность самостоятельно прекратить это состояние.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "dec931b50de2f9b2",
+    "name": "Подкожный карман",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "32fe375176c6dee5",
+      "page": 19,
+      "description": "<p>Секретная полость на теле, в которой можно носить маленькие вещи.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "09eb4f2597cc312e",
+    "name": "Водоплавающий",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "b855f86c58d7f9d7",
+      "page": 19,
+      "description": "<p>Даёт жабры, подкожный жир и мембрану на глазах — всё что нужно для жизни под водой.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "eaf1db4aca70ec1d",
+    "name": "Эйдетическая память",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "bb78bb96213c241f",
+      "page": 19,
+      "description": "<p>Развивает образную память пользователя до уровня, совместимого с фотографией</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e8c5cc6ab7272605",
+    "name": "Макро-зрение",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "31b762855a155e9c",
+      "page": 19,
+      "description": "<p>Телескопическое зрение, позволяющее разглядеть человека на расстоянии до 2 км.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7256d4a81ca3353c",
+    "name": "Микро-зрение",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "d5c9754afcd00176",
+      "page": 19,
+      "description": "<p>Позволяет рассмотреть волокна ткани, волоски и т.п.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "4bce2bab7726fb2c",
+    "name": "Параболический слух",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "82d18b233b26a3dc",
+      "page": 19,
+      "description": "<p>Позволяет идеально слышать всё в радиусе 10 метров и даёт “+2” к проверкам внимательности, связанными со звуком.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "595f4fd6ffaf1b2a",
+    "name": "Иммунитет к яду",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "cdd63a38a1e41bd3",
+      "page": 19,
+      "description": "<p>Говорит само за себя. Не защищает от кислот, щелочей и т.п.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "177c7f026fd39b8e",
+    "name": "Быстрый сон",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "2f00852676a0c02e",
+      "page": 19,
+      "description": "<p>Позволяет шиноби вместо сна медитировать 10 минут в день.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a741034f42220fe0",
+    "name": "Понимание животных",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "073e651b4e724c16",
+      "page": 19,
+      "description": "<p>Шиноби может с лёгкостью успокаивать сторожевых собак, приманивать кошек и т.п.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "afb85dca5e435483",
+    "name": "Внутреннее ухо",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "99bba4bda05d4abf",
+      "page": 19,
+      "description": "<p>Позволяет ходить (но не бегать) по канату без проверок. При падении считается, что шиноби с этой аугментацией пролетел на 10 метров меньше.</p><p class=\"source\">Шиноби, с. 20</p>",
+      "class": "D",
+      "price": 500000,
+      "slots": 0,
+      "grantedSkill": ""
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "5d6a7e5b9eaeaeeb",
+    "name": "Холодное оружие",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "ff3eec304e3a9689",
+      "page": 32,
+      "description": "<p>Холодное оружие (нунчаки, катаны, танто и пр) · 1d6 · - · - · -</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 5000,
+      "skill": "bujutsu",
+      "damage": "1d6",
+      "range": 0,
+      "magazine": {
+        "value": 0,
+        "max": 1
+      },
+      "usesAmmo": false,
+      "ammoType": "light",
+      "attacks": 1,
+      "notes": "",
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "f86eab21c639a355",
+    "name": "Баллончик с Д-газом",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "ed6c5922e59caba3",
+      "page": 32,
+      "description": "<p>Баллончик с Д-газом · - · 3м · 5 зарядов · Проверка силы, оглушение на 2d6 раундов при провале</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 2000,
+      "skill": "lightWeapons",
+      "damage": "0",
+      "range": 3,
+      "magazine": {
+        "value": 5,
+        "max": 5
+      },
+      "usesAmmo": true,
+      "ammoType": "light",
+      "attacks": 1,
+      "notes": "Проверка силы, оглушение на 2d6 раундов при провале",
+      "damageType": "effect",
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "cffcb73bf997140b",
+    "name": "Пистолет",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "b790a0ea2be39db6",
+      "page": 32,
+      "description": "<p>Пистолет · 2d6 · 25м · 15 выстрелов · -</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 10000,
+      "skill": "lightWeapons",
+      "damage": "2d6",
+      "range": 25,
+      "magazine": {
+        "value": 15,
+        "max": 15
+      },
+      "usesAmmo": true,
+      "ammoType": "light",
+      "attacks": 1,
+      "notes": "",
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "13c0048614c4d3d8",
+    "name": "Пистолет — пулемёт",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "bfe3dee399171b2f",
+      "page": 32,
+      "description": "<p>Пистолет — пулемёт · 2d6 · 25м · 4 очереди · 2 атаки в ход</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 15000,
+      "skill": "lightWeapons",
+      "damage": "2d6",
+      "range": 25,
+      "magazine": {
+        "value": 4,
+        "max": 4
+      },
+      "usesAmmo": true,
+      "ammoType": "light",
+      "attacks": 2,
+      "notes": "2 атаки в ход",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ca26426dc3ff465d",
+    "name": "Автомат",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "8c99d66944c478c9",
+      "page": 32,
+      "description": "<p>Автомат · 2d6 · 150м · 4 очереди · 2 атаки в ход</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 30000,
+      "skill": "lightWeapons",
+      "damage": "2d6",
+      "range": 150,
+      "magazine": {
+        "value": 4,
+        "max": 4
+      },
+      "usesAmmo": true,
+      "ammoType": "light",
+      "attacks": 2,
+      "notes": "2 атаки в ход",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "b72ce6ce0e844aa5",
+    "name": "Дробовик",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "d18339e96ae87946",
+      "page": 32,
+      "description": "<p>Дробовик* · - · - · 10 выстрелов · -</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 40000,
+      "skill": "lightWeapons",
+      "damage": "2d6",
+      "range": 20,
+      "magazine": {
+        "value": 10,
+        "max": 10
+      },
+      "usesAmmo": true,
+      "ammoType": "light",
+      "attacks": 1,
+      "notes": "",
+      "slots": 2,
+      "hitBonus": 1,
+      "category": "shotgun"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "36de6028495fa284",
+    "name": "Лёгкое противотанковое орудие",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "c11ff0ce1fb45b88",
+      "page": 33,
+      "description": "<p>Лёгкое противотанковое орудие · 6d6 · 100м · 1 выстрел · -</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 20000,
+      "skill": "heavyWeapons",
+      "damage": "6d6",
+      "range": 100,
+      "magazine": {
+        "value": 1,
+        "max": 1
+      },
+      "usesAmmo": true,
+      "ammoType": "heavy",
+      "attacks": 1,
+      "notes": "",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "47204b00154cab15",
+    "name": "Огнемёт",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "117f1c74d68b38be",
+      "page": 33,
+      "description": "<p>Огнемёт · 2d6 · 8м · 8 порций · 2 атаки в ход</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 30000,
+      "skill": "heavyWeapons",
+      "damage": "2d6",
+      "range": 8,
+      "magazine": {
+        "value": 8,
+        "max": 8
+      },
+      "usesAmmo": true,
+      "ammoType": "heavy",
+      "attacks": 2,
+      "notes": "2 атаки в ход",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a44a185557499811",
+    "name": "Гранатомёт",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "e24460d3c45350a5",
+      "page": 33,
+      "description": "<p>Гранатомёт* · * · 50м · 1 выстрел · -</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 40000,
+      "skill": "heavyWeapons",
+      "damage": "3d6",
+      "range": 50,
+      "magazine": {
+        "value": 1,
+        "max": 1
+      },
+      "usesAmmo": true,
+      "ammoType": "heavy",
+      "attacks": 1,
+      "notes": "",
+      "slots": 2,
+      "category": "launcher"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "1d84ad39b1181977",
+    "name": "Снайперская винтовка",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "fb075cf03cf6fe17",
+      "page": 33,
+      "description": "<p>Снайперская винтовка · 3d6 · 500м · 10 выстрелов · -</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 60000,
+      "skill": "heavyWeapons",
+      "damage": "3d6",
+      "range": 500,
+      "magazine": {
+        "value": 10,
+        "max": 10
+      },
+      "usesAmmo": true,
+      "ammoType": "heavy",
+      "attacks": 1,
+      "notes": "",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e1776e7a2a70acc2",
+    "name": "Пулемёт",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "0455469e8acac5ad",
+      "page": 33,
+      "description": "<p>Пулемёт · 2d6 · 180м · 50 очередей · 5 атак в ход</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 180000,
+      "skill": "heavyWeapons",
+      "damage": "2d6",
+      "range": 180,
+      "magazine": {
+        "value": 50,
+        "max": 50
+      },
+      "usesAmmo": true,
+      "ammoType": "heavy",
+      "attacks": 5,
+      "notes": "5 атак в ход",
+      "slots": 2
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "1c219eb2bc52a85d",
+    "name": "Скрытый кевларовый жилет",
+    "type": "armor",
+    "img": "systems/shinobi-vtt/assets/icons/armor.svg",
+    "system": {
+      "key": "81b3864723ab1c20",
+      "page": 30,
+      "description": "<p>Бронежилет для ношения под одеждой.</p><p class=\"source\">Шиноби, с. 31</p>",
+      "price": 50000,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "125afe32fb45d9a9",
+    "name": "Полицейский бронежилет",
+    "type": "armor",
+    "img": "systems/shinobi-vtt/assets/icons/armor.svg",
+    "system": {
+      "key": "1e0b9f3cb4bdd1b2",
+      "page": 30,
+      "description": "<p>То же, что и кевларовый жилет выше. Запрещён к ношению гражданскими лицами и может привлечь нежелательное внимание.</p><p class=\"source\">Шиноби, с. 31</p>",
+      "price": 10000,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "f0446607bcb2b881",
+    "name": "Боевой костюм",
+    "type": "armor",
+    "img": "systems/shinobi-vtt/assets/icons/armor.svg",
+    "system": {
+      "key": "3e048068bcf6f97e",
+      "page": 30,
+      "description": "<p>Включает в себя не только бронежилет (см. выше), но и противогаз на 30 минут, встроенную рацию и очки ночного зрения. Считается военной формой и запрещён к ношению гражданскими лицами, может привлечь нежелательное внимание.</p><p class=\"source\">Шиноби, с. 31</p>",
+      "price": 20000,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "352afa3d01b14c7f",
+    "name": "Амуниция для лёгкого оружия, обойма",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "98c1a9acbe2da2c6",
+      "page": 30,
+      "description": "<p class=\"source\">Шиноби, с. 30</p>",
+      "price": 1000,
+      "ammoType": "light"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "af5a40e90f52e74e",
+    "name": "Лазерный прицел",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "4f263ddca5dff674",
+      "page": 30,
+      "description": "<p>Увеличивает дальность стрельбы в 2 раза (но не более чем на 100 метров).</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 8000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7cc79aa88110f507",
+    "name": "Глушитель",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "490fdadd2e8b8cde",
+      "page": 30,
+      "description": "<p>Убирает звук выстрела, но снижает дальность стрельбы вдвое.</p><p class=\"source\">Шиноби, с. 32</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "effef992350e49b6",
+    "name": "Амуниция для тяж.оружия, обойма",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "d4da9d41606cd85b",
+      "page": 30,
+      "description": "<p class=\"source\">Шиноби, с. 30</p>",
+      "price": 3000,
+      "ammoType": "heavy"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "d7989d078c6696bf",
+    "name": "Дымовая граната",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "36d472d68181c272",
+      "page": 30,
+      "description": "<p>Создаёт облако дыма радиусом 10м на 8 раундов. Сквозь дым могут видеть только термальные приборы.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 1000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "0",
+      "damageType": "effect",
+      "range": 20,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "23e6ad43d4a15454",
+    "name": "Светошумовая граната",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "c2a91af95cd31852",
+      "page": 30,
+      "description": "<p>Если используется в закрытом помещении — цели проходят проверку силы, получая 5 оглушений при провале и 1 при успехе.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 1000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "0",
+      "damageType": "effect",
+      "range": 20,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c1519aa2a8c4f6b6",
+    "name": "Граната с Д-газом",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "d7f1941ac20c4f97",
+      "page": 30,
+      "description": "<p>Создаёт облако Д-газа радиусом 10м на 4 раунда. При провале проверки воли жертвы засыпают на 2d6 минут, при успехе — получают “-1” на все проверки на 2d6 минут.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 2000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "0",
+      "damageType": "effect",
+      "range": 20,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "791087bf3cbca3eb",
+    "name": "Осколочная граната",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "e89db7515bbfcdd7",
+      "page": 30,
+      "description": "<p>Наносит 3d6 урона в радиусе 3 метров и 1d6 урона в радиусе 3-5 метров.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 3000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "3d6",
+      "damageType": "damage",
+      "range": 20,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "192774b43a1e6397",
+    "name": "Напалмовая граната",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "7beced57b63c4b69",
+      "page": 30,
+      "description": "<p>Все цели в радиусе 3 метров получают 2d6 урона от горения практически нетушимой жидкости, которая игнорирует любую броню кроме боевого костюма и Второй Кожи. Чтобы сбить с себя огонь необходима успешная проверка ловкости, до совершения которой цель получает урон каждый раунд.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 5000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "2d6",
+      "damageType": "damage",
+      "range": 20,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "05c3b7dd72bd04bb",
+    "name": "Противопехотная мина",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "adbdefbd312de1d2",
+      "page": 30,
+      "description": "<p>Наносит 2d6 урона в секторе, представляющем собой четверть круга радиусом 40 м. В комплекте идёт детонатор дальностью действия 50 метров. При установке ведущий совершает тайную проверку умения взрывчатка с “+3”, чтобы узнать, получилось ли установить мину верно.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 10000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "2d6",
+      "damageType": "damage",
+      "range": 0,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "d4ff4cbe153d0980",
+    "name": "Магнитная мина",
+    "type": "weapon",
+    "img": "systems/shinobi-vtt/assets/icons/weapon.svg",
+    "system": {
+      "key": "4482caf9ea35e926",
+      "page": 30,
+      "description": "<p>Наносит 6d6 в радиусе 3м и 2d6 в радиусе 3-10м. В комплекте идёт таймер на 24 часа и детонатор дальностью действия 50 метров. При установке ведущий совершает тайную проверку умения взрывчатка с “+3”, чтобы узнать, получилось ли установить мину верно.</p><p class=\"source\">Шиноби, с. 33</p>",
+      "price": 25000,
+      "skill": "explosives",
+      "category": "explosive",
+      "damage": "6d6",
+      "damageType": "damage",
+      "range": 0,
+      "usesAmmo": false,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "925d26cd0927c8ea",
+    "name": "Фактор К",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "bec752655165650e",
+      "page": 34,
+      "description": "<p>Препарат, поддерживающий мозг живым d6 часов после смерти. Используется при добыче воспоминаний.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 1000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "cd616bde72b7bd7d",
+    "name": "Складные носилки",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "7ed03dee73d8222a",
+      "page": 34,
+      "description": "<p>Переносить на них раненого намного удобнее, чем нести его в руках.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 2500
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9c03a2260ffb8820",
+    "name": "Медицинский набор",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "fdcd0760b8bcc273",
+      "page": 34,
+      "description": "<p>Используется парамедиками для оказания первой помощи пациенту.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 2500
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c3a456da7db02759",
+    "name": "Операция на ране",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "2c2770c6275de307",
+      "page": 34,
+      "description": "<p>Услуга, требуемая после каждого получения ранения при отсутствии в партии врача.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 10000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "d8f893ebcc7f80eb",
+    "name": "Хирургический набор",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "b5e7da594e92b189",
+      "page": 34,
+      "description": "<p>Необходим для любого рода оперативного вмешательства.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 25000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0fbf2c719776b988",
+    "name": "Морозильная камера",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "1ac44486766dded4",
+      "page": 34,
+      "description": "<p>Портативное криоустройство на электронном замке, которое может мгновенно заморозить помещённую внутрь человеческую голову. Используется при добыче воспоминаний.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 30000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c197bd018c20db59",
+    "name": "Изменение лица",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "4f7bdd4bcce6e3f5",
+      "page": 34,
+      "description": "<p>Необходимая услуга, когда с вами отказываются работать все поддельщики документов.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 50000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "8a6926c2125370c4",
+    "name": "Полное ультразвуковое сканирование тела",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "09163ecdd4724f60",
+      "page": 34,
+      "description": "<p>На предмет болезней и жучков.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 50000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "3f25a5df006288ec",
+    "name": "Реанимация умирающего",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "2b56b6232b83c6eb",
+      "page": 34,
+      "description": "<p>Не такая уж большая цена за билет с того света.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 80000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a4f37e07f6c909b2",
+    "name": "Эмпатоскоп",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "088dd39aea4b3b11",
+      "page": 34,
+      "description": "<p>Детектор лжи, позволяющий также выявить репликантов.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 100000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a905e9b5cf530fa2",
+    "name": "Реконструкция",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "da0aaa1fb7f35415",
+      "page": 34,
+      "description": "<p>Реанимирование погибшего. Актуально в течении 3d6 часов после смерти.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 1000000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "eeea67cadf5b7d1f",
+    "name": "Альфа-волновое устройство",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "1d5dd49afd6cfb29",
+      "page": 34,
+      "description": "<p>Анализирует и идентифицирует мозговые волны. Используется для клонирования и изменения воспоминаний.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 5000000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "1d23eb5e9d9c145a",
+    "name": "Создание своего клона",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "c777611ad88a8380",
+      "page": 34,
+      "description": "<p>Незаменимая услуга в случае, когда от тела не осталось ничего, с чем мог бы поработать реаниматор.</p><p class=\"source\">Шиноби, с. 34</p>",
+      "price": 10500000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9a6a3f8c247cb6aa",
+    "name": "Подкожные часы",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "a8f41c5542eaf4d4",
+      "page": 35,
+      "description": "<p>Статусный имплант — часы, просвечивающие прямо из-под кожи твоего запястья.</p><p class=\"source\">Шиноби, с. 35</p>",
+      "price": 10000,
+      "class": "",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "94135008352530f9",
+    "name": "Личный передатчик данных",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "c3805e634c7945e4",
+      "page": 35,
+      "description": "<p>Передатчик устанавливается в живот, руку или грудь и активируется удалённо. При активации начинает издавать сигнал, улавливаемый на расстоянии до 5 км. Внутренние батареи способны обеспечивать до 1 недели работоспособности.</p><p class=\"source\">Шиноби, с. 35</p>",
+      "price": 80000,
+      "class": "",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0faa96d8d7f6e686",
+    "name": "Костюм-биомонитор",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "be3fe9dc8f64c69f",
+      "page": 35,
+      "description": "<p>Костюм содержит набор биотермальных сенсоров, которые отслеживают температуру, кровяное давление, мозговую активность, уровень сахара и прочую важную информацию. Информация отображается из-под кожи на запястье. Также костюм может влиять на организм, снижая стресс, нейтрализуя действия алкоголя и наркотиков и даруя “+1” ко всем броскам воли против ранений.</p><p class=\"source\">Шиноби, с. 35</p>",
+      "price": 500000,
+      "class": "",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "eef660c20eef99ab",
+    "name": "Сим-стим",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "1e9f7f84e149ecb8",
+      "page": 35,
+      "description": "<p>Процессор, который улавливает, обрабатывает и пересылает все 5 чувств пользователя на удалённую деку симуляции. Позволяет пользователю деки слышать, видеть, чувствовать и обонять всё то же, что и носитель. При помощи технологии Сим-стим можно записывать ощущения человека, хранить, передавать и чувствовать их другим людям в виде шоу. Это очень популярное развлечение, позволяющее ощутить себя на войне, на сцене, в космической ракете и т.д.</p><p class=\"source\">Шиноби, с. 35</p>",
+      "price": 1000000,
+      "class": "",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "27bf2de58eee75de",
+    "name": "Бомба в мозгу",
+    "type": "augmentation",
+    "img": "systems/shinobi-vtt/assets/icons/augmentation.svg",
+    "system": {
+      "key": "e5f6de3c4aee6ce4",
+      "page": 35,
+      "description": "<p>Маленький взрывной заряд, который хирургически имплантируется в кору головного мозга. Может быть приведён в действие на расстоянии 100 метров, а также через телефон, если цель возьмёт трубку. При активации мгновенно убивает пациента и наносит 2d6 урона в 3 метрах от него.</p><p class=\"source\">Шиноби, с. 35</p>",
+      "price": 2000000,
+      "class": "",
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "bcdabd31aec1e59e",
+    "name": "Порция кофе/пива",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "eac8e3e30069bf79",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 100,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ee3688bbf6863b5f",
+    "name": "Вредная пища",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "e02153eb61dd1d82",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 500,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "002bb25ab2895ee8",
+    "name": "Достойное питание",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "366d01d0112d3e57",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 1000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "3829101cb414548f",
+    "name": "Ночь кутежа",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "f13193162eecbd54",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 3000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "8621f5d3133fd397",
+    "name": "Ячейка в капсульном отеле (ночь)",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "c4cf600a67e21007",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 1000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "10c33bcffe22915a",
+    "name": "Номер в хостеле (ночь)",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "7d6b19cadd4c4be2",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 4000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "917ddb9bfa2cee7b",
+    "name": "Номер в отеле (ночь)",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "9840613ca80d9633",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 7000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e18cef78b71110df",
+    "name": "Квартира (неделя)",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "1a3a43e47c3b9cfe",
+      "page": 35,
+      "description": "<p class=\"source\">Шиноби, с. 35</p>",
+      "price": 3000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "37a46686130331ea",
+    "name": "Рабочий класс",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "1fa683fd1e8d321f",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 10000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "b8a3bd4e4f76d03c",
+    "name": "Средний класс",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "ea0111a4285ed0b1",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 20000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "85dd277c92a414a1",
+    "name": "Высший класс",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "7beb14ba9301b39d",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 50000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "32786fc9758a3497",
+    "name": "Билет на автобус",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "9a4e324ae04fa954",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 200,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "dea2daddd930cc0a",
+    "name": "Проезд на метро",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "bced8a010b5f81a3",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 500,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "397afcf4d92fc685",
+    "name": "Такси",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "d9368186be17b5c6",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 1000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "06cb61507aa98ddd",
+    "name": "Стационарный компьютер",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "e2a881b4925bfd7d",
+      "page": 36,
+      "description": "<p>Стандартный компьютер с выходом в Сеть и принтером. 4 слота под программы</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 50000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "01513b8aadc03059",
+    "name": "КПК",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "34efda1251374917",
+      "page": 36,
+      "description": "<p>Хранилище ключей, способное записывать и воспроизводить видео, аудио и текст</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 6000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "328605c67f1c5f9a",
+    "name": "Смарт-карта",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "9e602c186aca55e5",
+      "page": 36,
+      "description": "<p>Устройство для хранения программного обеспечения.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 1000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0f07aec1e8ddc31d",
+    "name": "База данных",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "b3296bf68f6e407e",
+      "page": 37,
+      "description": "<p>Огромное хранилище данных, таких как адреса или телефоны людей, списки покупателей определённой торговой сети и пр.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 10000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c62baa4ec1059270",
+    "name": "Видеоконференция",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "8267b9ff14589bf9",
+      "page": 37,
+      "description": "<p>Позволяет связываться с другими людьми в Киберпространстве. При этом пользователи видят друг друга и могут показывать друг другу фото, графики и другие документы.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 20000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7a0c882b61189955",
+    "name": "Тех-метр",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "6bf5013786e6afd5",
+      "page": 37,
+      "description": "<p>Программа, помогающая выявлять и чинить неисправности в технике (“+2” к проверкам технологии).</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 25000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "17feb920900b3f1c",
+    "name": "Компилятор данных",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "daa3d65c2887acb1",
+      "page": 37,
+      "description": "<p>Программа, которая автоматически сканирует Киберпространство по определённым запросам и выдаёт найденное в удобном для чтения формате.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 30000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c488bd407a4f904d",
+    "name": "Программа манипулирования изображениями",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "5aec9128e3e58ac2",
+      "page": 37,
+      "description": "<p>Софт, позволяющий изменять и подделывать аудио и видеоизображения.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 50000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e5ab3685995c7599",
+    "name": "Симулятор личности",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "ae69c4b4bbca0539",
+      "page": 37,
+      "description": "<p>Позволяет предсказать будущие действия человека. Точность зависит от того, какие данные о человеке предоставлены программе.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 100000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "db757205c6a8cc2e",
+    "name": "Видео/звуковой анализатор",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "1fbd5ea69a675839",
+      "page": 37,
+      "description": "<p>Комплексная утилита, анализирующая звуковые дорожки/видеоизображения и выдающая как ИНЧ человека, так и его текущие эмоции/уровень стресса.</p><p class=\"source\">Шиноби, с. 37</p>",
+      "price": 150000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "af9fb02a3ba158f8",
+    "name": "ЛЕДоруб 1-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "db456f319973dd6d",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 5000,
+      "slots": 0,
+      "level": 1,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "309e3ebd1f41df01",
+    "name": "ЛЕДоруб 2-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "92852fd6cc572211",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 15000,
+      "slots": 0,
+      "level": 2,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c95a8e6d8b84d259",
+    "name": "ЛЕДоруб 3-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "2c0f1913674b5c1f",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 45000,
+      "slots": 0,
+      "level": 3,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "47478c3a7caf68d1",
+    "name": "ЛЕДоруб 4-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "a3d6ffa4728fe764",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 135000,
+      "slots": 0,
+      "level": 4,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "77ba85760065b5cc",
+    "name": "ЛЕДоруб 5-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "8e86473a3111d1ea",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 405000,
+      "slots": 0,
+      "level": 5,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "3ec2a14fee27c879",
+    "name": "ЛЕДоруб 6-го уровня",
+    "type": "program",
+    "img": "systems/shinobi-vtt/assets/icons/program.svg",
+    "system": {
+      "key": "a35070183ee26c9a",
+      "page": 37,
+      "description": "<p class=\"source\">Шиноби, с. 37</p>",
+      "price": 1215000,
+      "slots": 0,
+      "level": 6,
+      "category": "icebreaker"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "ae401f848af3a3bf",
+    "name": "Бинокль",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "9af636b34cab013f",
+      "page": 38,
+      "description": "<p>Обычный карманный бинокль.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 2000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "85d27d8f6173b453",
+    "name": "Радионаушник",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "3af7b25043353fd5",
+      "page": 38,
+      "description": "<p>Используется вместе с рацией или мобильным телефоном.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 4000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "22ba3189f345dabb",
+    "name": "Карманная рация",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "163210bc7644fac3",
+      "page": 38,
+      "description": "<p>Радиус действия 3-5 км.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 8000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "4403df834ae32cc6",
+    "name": "Мобильный телефон",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "94957abb4e90ffc7",
+      "page": 38,
+      "description": "<p>Почти помещается в руку!</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "39339c729267512b",
+    "name": "Бинокль с ночным зрением и лазерным дальномером",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "5f3b8d22b4cbc61e",
+      "page": 38,
+      "description": "<p>Дальность действия — до 3 км.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 20000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0017a4951696fa1f",
+    "name": "Радиосканер",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "5c06038146a46f29",
+      "page": 38,
+      "description": "<p>Способен отслеживать и глушить одновременно до 20 станций в радиусе 10 км.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 20000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "062e94125290f4bf",
+    "name": "Очки ночного видения",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "6b70fec1ecd49239",
+      "page": 38,
+      "description": "<p>Инфразрение радиусом до 100 метров.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 25000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c618ab41af5b4dbc",
+    "name": "Пистолет-кошка",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "10160ff6b4c4b17c",
+      "page": 38,
+      "description": "<p>Позволяет выстрелить крюком, прикреплённым к 30-метровому тросу, и подняться по нему.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 30000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "566c0bfa48b53775",
+    "name": "Записывающее устройство",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "1f4da1242bf62c17",
+      "page": 38,
+      "description": "<p>Позволяет записывать и проигрывать звук и видео на смарт-карты.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 40000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "2e2bcc81b61327b6",
+    "name": "Сим-стим проигрыватель",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "bed6c2c2b8fc3f1b",
+      "page": 38,
+      "description": "<p>Позволяет получать и проигрывать сим-стим передачи или кассеты.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 50000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "b0cbeff53ed24d74",
+    "name": "Умные очки",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "aa8847352466b690",
+      "page": 38,
+      "description": "<p>Эти военные очки анализируют дальность до цели, ветер и иные помехи, давая “+1” к попаданию из оружия.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 100000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "9e37b58a4d558e50",
+    "name": "Мимикрирующий поликарбоновый костюм",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "5033cbc9dfea3e19",
+      "page": 38,
+      "description": "<p>Костюм с капюшоном, покрывающий всё тело и позволяющий сливаться с фоном, если пользователь неподвижен (в противном случае на поверхности костюма видны помехи, выдающие прячущегося). Очевидно, сверху лучше не надевать одежду или броню.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 200000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e8dd3f47275d4e0b",
+    "name": "Термальные очки",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "412ee1b0cc6a258e",
+      "page": 38,
+      "description": "<p>Позволяют видеть всё, что излучает тепло, позволяя “смотреть” даже через тонкие стены и двери.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 300000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "91ec8909bce7b98c",
+    "name": "Сим-стим редактор",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "906e5572210ea8d4",
+      "page": 38,
+      "description": "<p>Позволяет получать, записывать и редактировать сим-стим передачи пользователя в радиусе до 120 м.</p><p class=\"source\">Шиноби, с. 38</p>",
+      "price": 500000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "919c6daa30c45619",
+    "name": "Фонарик",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "010218caae2eb63a",
+      "page": 39,
+      "description": "<p class=\"source\">Шиноби, с. 39</p>",
+      "price": 1000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "c8545d8d81afa760",
+    "name": "Лазерный инструмент (позволяет резать и сваривать)",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "fbdfdd6f4b26fb7b",
+      "page": 39,
+      "description": "<p class=\"source\">Шиноби, с. 39</p>",
+      "price": 2000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "d69f2703a76ac6cc",
+    "name": "Газовая маска",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "b32da65de6975c40",
+      "page": 39,
+      "description": "<p class=\"source\">Шиноби, с. 39</p>",
+      "price": 3000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e1efb7bd3d6c7445",
+    "name": "Мультиинструмент (всё необходимое механику или ремонтнику)",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "1794b7aa5635e45e",
+      "page": 39,
+      "description": "<p class=\"source\">Шиноби, с. 39</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "71b3a8cfba89f4d0",
+    "name": "Жучок",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "001edf54d3398c55",
+      "page": 39,
+      "description": "<p>Передаёт аудио на расстоянии до 100 м в течение 24 часов.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 2000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "cc004abf338b0268",
+    "name": "Жучок с видео",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "1b9a77f3b31f6632",
+      "page": 39,
+      "description": "<p>С помощью объектива “рыбий глаз” передают аудио и видео со 180° обзора на расстояние до 100 м в течение 24 часов.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 5000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "46a9e00cf8158910",
+    "name": "Лазерный ослепитель",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "010df2313f0f298f",
+      "page": 39,
+      "description": "<p>Может ослеплять камеры на время до 10 минут. Размером с ручку и имеет дальность 50 м.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 5000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "833a39dd08286c4a",
+    "name": "Волоконная камера",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "9d60ad0703263005",
+      "page": 39,
+      "description": "<p>Используется для подсовывания под двери или заглядывания за угол.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 5000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e1228da51b168771",
+    "name": "Инфракрасный датчик движения",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "2e59b9b9600fb505",
+      "page": 39,
+      "description": "<p>Портативное устройство, способное засечь ИК-излучение и издать сигнал тревоги или послать его на мобильный телефон.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "81bba544a4114bea",
+    "name": "Кабельное СУ",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "631ea200063f062b",
+      "page": 39,
+      "description": "<p>Устройство, передающее информацию с кабеля, на котором установлено, на расстояние до 100 м.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "29d8217f212dc762",
+    "name": "Отмычки",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "33845709a0dd5957",
+      "page": 39,
+      "description": "<p>Отлично подходят для борьбы с теми, кто всё ещё использует аналоговые замки.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0f0b56b3d623a926",
+    "name": "Шифратор",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "4a8ff04555837f74",
+      "page": 39,
+      "description": "<p>Устанавливается на приёмном и передающем телефоне или рации, шифруя передачу и вынуждая желающего подслушать разговор дешифровать полученную запись.</p><p class=\"source\">Шиноби, с. 39</p>",
+      "price": 10000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7a48d6c4febb2e25",
+    "name": "Следящий приёмо-передатчик",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "7ff9f49018caea78",
+      "page": 39,
+      "description": "<p>Карманный приёмо-передатчик, способный записывать информацию с жучков и кабельных СУ. Также может быть использован для поиска жучков и кабельных СУ в помещении.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 25000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "76c4fdbc901dd097",
+    "name": "Чемоданчик гримёра",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "ff80fc66f53a20f5",
+      "page": 39,
+      "description": "<p>Содержит наборы поликарбонной кожи, волос, контактных линз и всего прочего, что поможет сойти за другого человека. Начинает деформироваться через 3 часа после нанесения.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 25000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "af74af36a02d2f6b",
+    "name": "Дешифратор электронных замков",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "2dd4dbb3d726cdaf",
+      "page": 39,
+      "description": "<p>Устройство, дающее “+2” к умению контрбезопасность при попытке взлома электронного замка.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 80000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "803401f28df28ab3",
+    "name": "Станция активных помех",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "e51ea7db421b0dc3",
+      "page": 39,
+      "description": "<p>Глушит все устройства, работающие на радиочастотах в радиусе 100 метров на 10 минут.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 80000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "60cbf38cc8a0f11f",
+    "name": "Лазерное ухо",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "104612f8a497613b",
+      "page": 39,
+      "description": "<p>Это похожее на винтовку устройство может быть нацелено на стену или стеклянную панель, позволяя прослушивать разговоры через неё. Дальность действия равна полю зрения человека.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 120000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "e81b5c5ba7b4b3e5",
+    "name": "Анти-жучок",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "df53204bd32db255",
+      "page": 39,
+      "description": "<p>Глушит все жучки и передающие устройства в радиусе 5 метров розовым шумом. Способен работать без сети не более часа.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 500000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "f57180d8cbee76fa",
+    "name": "Удалённо пилотируемый дрон",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "f7b341da16a69262",
+      "page": 39,
+      "description": "<p>Миниатюрный робот с камерой, микрофоном и тепловизором, используемый корпорациями для облёта своих территорий. Работает 2 часа, максимальная скорость — 5 м/сек.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 1200000
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "f880f4c92e15cb66",
+    "name": "Перепрошивка чужого ИНЧ под себя",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "babf9eed29236a4f",
+      "page": 40,
+      "description": "<p class=\"source\">Шиноби, с. 40</p>",
+      "price": 5000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "249a29cae3e879f6",
+    "name": "Достать всю информацию с чужого ИНЧ",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "e4b5ff155da262f4",
+      "page": 40,
+      "description": "<p class=\"source\">Шиноби, с. 40</p>",
+      "price": 20000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "600dac2ec82e9f70",
+    "name": "Создание фальшивого ИНЧ",
+    "type": "service",
+    "img": "systems/shinobi-vtt/assets/icons/service.svg",
+    "system": {
+      "key": "ba728876aa9a1615",
+      "page": 40,
+      "description": "<p class=\"source\">Шиноби, с. 40</p>",
+      "price": 500000,
+      "slots": 0
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "30a8991f9663237d",
+    "name": "Аспедин",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "01ec50376e18b8f4",
+      "page": 40,
+      "description": "<p>Предотвращает/ликвидирует интоксикацию алкоголем или иными веществами, позволяя шиноби гарантированно оставаться начеку в течение 3 часов.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 3000,
+      "doses": 6,
+      "category": "medicine"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "1e6f1e6aca3eaf23",
+    "name": "Кортелин",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "72b5f8466377911d",
+      "page": 40,
+      "description": "<p>Стимулятор, позволяющий не спать ночь без штрафов.</p><p class=\"source\">Шиноби, с. 40</p>",
+      "price": 5000,
+      "doses": 6,
+      "category": "medicine"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "129ceef93f282f21",
+    "name": "Полигеронол-Z",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "e202225e308855fa",
+      "page": 40,
+      "description": "<p>Галлюциноген, используемый в психиатрии для работы с психологическими травмами пациента, очень быстро нашёл своё применение в качестве сыворотки правды. Время действия — 1 час.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 10000,
+      "doses": 6,
+      "category": "medicine"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "171f99a522853af1",
+    "name": "Бензодитрополин",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "f100b84b858485df",
+      "page": 40,
+      "description": "<p>Универсальный анти-токсин, позволяющий бороться с большинством ядов и нейротоксинов.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 20000,
+      "doses": 6,
+      "category": "medicine"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "6616d27d48f29a17",
+    "name": "Феромон-Х",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "4a4f935bde1e785e",
+      "page": 41,
+      "description": "<p>“+1” ко всем социальным навыкам на 1-3 часа. Пост-эффект: “-3” ко всем проверкам, основанным на зрении или слухе на то же время после окончания действия.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 1000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a93a2aebd9204235",
+    "name": "Яг (гипердексамин)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "2bd057b5b3bf5c7b",
+      "page": 41,
+      "description": "<p>Даёт “+4” к проверкам силы на полчаса. Пост-эффект: ярость, которую употребивший вымещает на первом попавшемся объекте или человеке.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 2000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "740499dea52d2b8e",
+    "name": "*Виракс-Б",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "838b15b242fc6231",
+      "page": 41,
+      "description": "<p>Транквилизатор, вызывающий паралич. Цель делает проверку воли и парализуется на 2d6 минут при провале или получает ”-2” ко всем броскам при успехе.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 2000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "26f8772197c8d33a",
+    "name": "*ИАФ (Ингибитор ангиотензинпревращающего фермента)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "c4686a47c6c6a8b3",
+      "page": 41,
+      "description": "<p>Даёт “+1” ко всем физическим и социальным навыкам на 1 час. Пост-эффект: тошнота и слабость, “-2” ко всем броскам в течение часа. По окончанию действия необходима проверка воли. При её провале ты теряешь сознание и получаешь 1d6 урона.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 2000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0b2ccc33046624e3",
+    "name": "Эндорфин (синтетический аналог)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "1b1dccffca69c216",
+      "page": 41,
+      "description": "<p>Снимает все негативные последствия ранений, однако даёт “-1” ко всем физическим проверкам.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 3000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "4acb991bff11e6dd",
+    "name": "Умный наркотик (бетасеротонин)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "817c995c43ad20f0",
+      "page": 41,
+      "description": "<p>Даёт “+1” к проверкам, связанным с технологиями или умственной работой на 1-3 часа. Сайд-эффект: транс, в который впадает употребивший на те же часы.</p><p class=\"source\">Шиноби, с. 41</p>",
+      "price": 4000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "7b7ded95a40646b7",
+    "name": "Скорость (дексамфетамин)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "bc2fdf271dbd2ada",
+      "page": 41,
+      "description": "<p>Даёт “+2” ко всем проверкам, не требующим концентрации и неспешности на полчаса. Сайд-эффект: кратковременный взрыв бодрости, за которым приходит “-2” ко всем броскам на 3 часа.</p><p class=\"source\">Шиноби, с. 42</p>",
+      "price": 5000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "5091001ae8114ad4",
+    "name": "Спидбол (Демерол)",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "34c32a2cbf78525b",
+      "page": 41,
+      "description": "<p>Употребивший становится хладнокровным убийцей, получающим “+2” ко всем рукопашным атакам и проверкам, связанным с физической формой на час. Сайд-эффект: кататонический ужас и приступы паники, длящиеся час.</p><p class=\"source\">Шиноби, с. 42</p>",
+      "price": 8000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "10b76603fcc3b477",
+    "name": "*Дельта-14",
+    "type": "drug",
+    "img": "systems/shinobi-vtt/assets/icons/drug.svg",
+    "system": {
+      "key": "cd022fad6d5625d0",
+      "page": 41,
+      "description": "<p>Военный токсин, вызывающий 2d6 урона, если проверка воли пройдена, и смерть в течение двух раундов при провале. Продаётся в виде аэрозоля.</p><p class=\"source\">Шиноби, с. 42</p>",
+      "price": 40000,
+      "doses": 1,
+      "category": "designer"
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "11f4af9c75377236",
+    "name": "Amstrad C-22",
+    "type": "deck",
+    "img": "systems/shinobi-vtt/assets/icons/deck.svg",
+    "system": {
+      "key": "dd17320cce186b95",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 20000,
+      "deckSlots": 2,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "5aae285990e0b6bd",
+    "name": "Toshiba Paraline 3030",
+    "type": "deck",
+    "img": "systems/shinobi-vtt/assets/icons/deck.svg",
+    "system": {
+      "key": "b4c5bde0bcbb0f34",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 50000,
+      "deckSlots": 3,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "cea4e14350493ec7",
+    "name": "Hosaka Goldstar-4",
+    "type": "deck",
+    "img": "systems/shinobi-vtt/assets/icons/deck.svg",
+    "system": {
+      "key": "7a5330bcc9d860e8",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 100000,
+      "deckSlots": 4,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "a0891d3c167eb7bf",
+    "name": "Hitachi Netspace-5",
+    "type": "deck",
+    "img": "systems/shinobi-vtt/assets/icons/deck.svg",
+    "system": {
+      "key": "a01456b81fd9dd2d",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 200000,
+      "deckSlots": 5,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "4af74e28c0545162",
+    "name": "Ono-Sendai Cyberspace-6",
+    "type": "deck",
+    "img": "systems/shinobi-vtt/assets/icons/deck.svg",
+    "system": {
+      "key": "f4eb03cb91e2da3c",
+      "page": 36,
+      "description": "<p class=\"source\">Шиноби, с. 36</p>",
+      "price": 500000,
+      "deckSlots": 6,
+      "slots": 1
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "fc5acd4d4a016051",
+    "name": "Мини-гарнитура",
+    "type": "gear",
+    "img": "systems/shinobi-vtt/assets/icons/gear.svg",
+    "system": {
+      "key": "409ebfadeacb2492",
+      "page": 30,
+      "description": "<p>Каждый шиноби начинает игру с пистолетом и мини-гарнитурой с радиусом действия 100 метров.</p><p>Шиноби, с. 30</p>",
+      "slots": 0,
+      "notes": "Стартовая гарнитура. Радиус 100 м."
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "85a96b04416b5334",
+    "name": "Дробовик: Дробь",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "a81d68fd889695f2",
+      "page": 32,
+      "description": "<p>“+1” к попаданию.  </p><p>Шиноби, с. 32</p>",
+      "ammoType": "shotgun",
+      "damage": "2d6",
+      "range": 20
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "833691fab20a6ceb",
+    "name": "Дробовик: Взрывной патрон",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "efb7c26a851aaa51",
+      "page": 32,
+      "description": "<p>Одиночный тяжёлый взрывающийся патрон.  </p><p>Шиноби, с. 32</p>",
+      "ammoType": "shotgun",
+      "damage": "3d6",
+      "range": 10
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "97ce6cac6493bff1",
+    "name": "Дробовик: Транквилизатор",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "262fdaefbc953f54",
+      "page": 32,
+      "description": "<p>Цель совершает проверку силы, вырубается на 2d6 минут при провале и получает “-2” на все проверки на 2d6 минут при успехе.  </p><p>Шиноби, с. 32</p>",
+      "ammoType": "shotgun",
+      "damage": "-",
+      "range": 20
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  },
+  {
+    "_id": "0ab0b20aded38219",
+    "name": "Дробовик: Бронебойный",
+    "type": "ammo",
+    "img": "systems/shinobi-vtt/assets/icons/ammo.svg",
+    "system": {
+      "key": "ea7f8e7a1ec01aa5",
+      "page": 32,
+      "description": "<p>Патрон с вольфрамовым сердечником, игнорирует броню и даёт “+1” на урон по транспорту.  </p><p>Шиноби, с. 32</p>",
+      "ammoType": "shotgun",
+      "damage": "2d6",
+      "range": 20
+    },
+    "effects": [],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "shinobi-vtt": {
+        "source": "Шиноби, 2023"
+      }
+    }
+  }
+]

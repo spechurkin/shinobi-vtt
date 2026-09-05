@@ -1,0 +1,1178 @@
+@font-face {
+        font-family: "Stalinist";
+        src: url("../assets/fonts/StalinistOne-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+}
+
+@font-face {
+        font-family: "Oswald";
+        src: url("../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+}
+
+@font-face {
+        font-family: "Roboto";
+        src: url("../assets/fonts/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 300 700;
+        font-display: swap;
+}
+
+@font-face {
+        font-family: "Yanone";
+        src: url("../assets/fonts/YanoneKaffeesatz-VariableFont_wght.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 200 700;
+        font-display: swap;
+}
+
+.shinobi {
+        --paper: #fcfbf7;
+        --ink: #151515;
+        --muted: #6c6a60;
+        --line: #252525;
+        --accent: #e3bc51;
+        --danger: #9d2929;
+        color: var(--ink);
+        font-family: "Roboto", Arial, sans-serif;
+}
+
+.shinobi .window-content {
+        padding: 0;
+        background: var(--paper);
+        color: var(--ink);
+        overflow: hidden;
+}
+
+.shinobi .shinobi-shell {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+}
+
+.shinobi .shinobi-scroll {
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 0;
+        flex: 1;
+        padding: 22px;
+        scrollbar-width: thin;
+}
+
+.shinobi :is(input,select,textarea,button) {
+        font-family: inherit;
+        color: var(--ink);
+        box-shadow: none;
+}
+
+.shinobi :is(input[type=text],input[type=number],input[type=search],select,textarea) {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid #aaa69a;
+        border-radius: 0;
+        min-width: 0;
+        width: 100%;
+        font-size: 14px;
+        height: 30px;
+}
+
+.shinobi input[type=checkbox] {
+        accent-color: var(--ink);
+        width: 17px;
+        height: 17px;
+        flex: none;
+        margin: 0 5px 0 0;
+}
+
+.shinobi textarea {
+        resize: vertical;
+        min-height: 60px;
+        height: 72px;
+        line-height: 1.45;
+        padding: 5px 1px;
+}
+
+.shinobi .prose-field {
+        display: flex;
+        flex-direction: column;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror {
+        display: block;
+        width: 100%;
+        min-height: 260px;
+        border: 1px solid #aaa69a;
+        border-radius: 3px;
+        background: #fffef9;
+        color: var(--ink);
+        overflow: hidden;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-container,
+.shinobi prose-mirror.shinobi-prose-mirror .editor-content,
+.shinobi prose-mirror.shinobi-prose-mirror [contenteditable="true"] {
+        min-height: 220px;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-content {
+        position: static;
+        inset: auto;
+        flex: 1 1 auto;
+        overflow-y: auto;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-content [contenteditable="true"] {
+        position: static;
+        inset: auto;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-content,
+.shinobi prose-mirror.shinobi-prose-mirror [contenteditable="true"] {
+        padding: 6px 12px;
+        color: var(--ink);
+        line-height: 1.5;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        position: relative;
+        z-index: 2;
+        flex: 0 0 auto;
+        min-height: 34px;
+        padding: 3px;
+        border-bottom: 1px solid #aaa69a;
+        background: #e9e4d8;
+        color: var(--ink);
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu :is(button, select) {
+        flex: 0 0 auto;
+        margin: 0;
+        min-width: 29px;
+        min-height: 26px;
+        height: 26px;
+        padding: 2px 7px;
+        border: 1px solid #928b7b;
+        border-radius: 3px;
+        background: #fffef9;
+        color: var(--ink);
+        line-height: 1;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu select {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button.icon,
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button:has(> i:only-child) {
+        width: 29px;
+        height: 29px;
+        min-width: 29px;
+        min-height: 29px;
+        max-width: 29px;
+        max-height: 29px;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button.icon > i,
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button:has(> i:only-child) > i {
+        margin: 0;
+        width: auto;
+        text-align: center;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button:hover,
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button:focus-visible,
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu button[aria-pressed="true"] {
+        background: #e3bc51;
+        color: #151515;
+        border-color: #151515;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu :is(button, select) i {
+        color: inherit;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu :is(ul, .pm-dropdown) {
+        border: 1px solid #928b7b;
+        background: #fffef9;
+        color: var(--ink);
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror .editor-menu :is(ul, .pm-dropdown) :is(button, li):hover {
+        background: #e3bc51;
+        color: #151515;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror button.toggle,
+.shinobi prose-mirror.shinobi-prose-mirror button.icon.toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 29px;
+        height: 29px;
+        min-width: 29px;
+        min-height: 29px;
+        max-width: 29px;
+        max-height: 29px;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+}
+
+.shinobi prose-mirror.shinobi-prose-mirror button.toggle > i,
+.shinobi prose-mirror.shinobi-prose-mirror button.icon.toggle > i {
+        width: auto;
+        margin: 0;
+        text-align: center;
+}
+
+.shinobi .shinobi-prose-display {
+        min-height: 260px;
+        padding: 10px 12px;
+        border: 1px solid #aaa69a;
+        border-radius: 3px;
+        background: #fffef9;
+        line-height: 1.5;
+        overflow-y: auto;
+}
+
+.shinobi select option {
+        background: var(--paper);
+        color: var(--ink);
+}
+
+.shinobi button {
+        min-height: 28px;
+        height: auto;
+        border: 1px solid #928b7b;
+        border-radius: 3px;
+        background: transparent;
+        padding: 4px 9px;
+        line-height: 1.25;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background .12s;
+        white-space: normal;
+}
+
+.shinobi button:hover {
+        background: #e8d69e;
+        color: #111;
+        border-color: #151515;
+        box-shadow: none;
+}
+
+.shinobi button:disabled {
+        opacity: .4;
+        cursor: default;
+}
+
+.shinobi :is(input,textarea,select,button):focus-visible {
+        outline: 2px solid #b38b20;
+        outline-offset: 2px;
+}
+
+.shinobi h1 {
+        font-family: "Stalinist", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        border: 0;
+        margin: 3px 0;
+        letter-spacing: -1.5px;
+}
+
+.shinobi h2 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: "Stalinist", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0 0 10px;
+        border: 0;
+}
+
+.shinobi :is(h3, h4, h5, h6) {
+        font-family: "Oswald", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 6px 0;
+}
+
+.shinobi table {
+        font-family: "Yanone", sans-serif;
+}
+
+.shinobi small, .shinobi .empty {
+        color: var(--muted);
+        font-size: 14px;
+}
+
+.shinobi .empty {
+        padding: 12px 0;
+        font-style: italic;
+}
+
+.shinobi .box {
+        border: 2px solid var(--line);
+        border-radius: 1px 8px 1px 8px;
+        padding: 10px 12px;
+        margin: 0 0 15px;
+        display: block;
+        min-width: 0;
+}
+
+.shinobi label.box {
+        font-family: "Stalinist", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+}
+
+.shinobi label.box :is(input,textarea,select) {
+        font-family: "Roboto", Arial, sans-serif;
+        font-weight: 400;
+}
+
+.shinobi .sheet-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px 12px;
+        background: var(--ink);
+        border-bottom: 3px solid var(--accent);
+}
+
+.shinobi .sheet-toolbar button {
+        color: #ddd7c8;
+        border-color: #605e58;
+}
+
+.shinobi .sheet-toolbar button.selected, .shinobi .sheet-toolbar button:hover {
+        background: var(--accent);
+        color: #161616;
+        border-color: var(--accent);
+}
+
+.shinobi .hidden {
+        display: none !important;
+}
+
+.shinobi .front-top {
+        display: grid;
+        grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) 95px;
+        gap: 16px;
+}
+
+.shinobi .identity-grid {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-column: 1/3;
+        gap: 14px;
+}
+
+.shinobi .identity-grid .box {
+        margin: 0;
+        min-height: 78px;
+}
+
+.shinobi .identity-grid textarea {
+        min-height: 46px;
+        height: 46px;
+        font-size: 14px;
+}
+
+.shinobi .identity input {
+        font-size: 19px;
+        height: 38px;
+}
+
+.shinobi .sheet-brand {
+        grid-column: 3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 8px 0;
+        gap: 8px;
+}
+
+.shinobi .sheet-brand > span {
+        font-family: Stalinist, sans-serif;
+        font-size: 62px;
+        font-weight: 900;
+        line-height: 1;
+        color: #090909;
+        text-shadow: 2px 2px 0 var(--paper), 3px 3px 0 var(--accent);
+        transform: scaleX(1.1);
+}
+
+.shinobi .sheet-brand img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border: 2px solid #151515;
+        cursor: pointer;
+}
+
+.shinobi .skills-column {
+        grid-column: 1;
+        min-width: 0;
+}
+
+.shinobi .skills-column > .box:last-child {
+        margin-bottom: 0;
+}
+
+.shinobi .concept-skill {
+        margin-bottom: 14px;
+        min-height: 70px;
+}
+
+.shinobi .augmentations {
+        grid-column: 2;
+        margin: 0;
+}
+
+.shinobi .augmentations h2 > span {
+        margin-left: auto;
+        font-size: 14px;
+}
+
+.shinobi .ruled-row {
+        min-height: 37px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-bottom: 1px solid #777365;
+}
+
+.shinobi .row-number {
+        width: 16px;
+        flex: none;
+        font-size: 14px;
+}
+
+.shinobi .blank-line {
+        flex: 1;
+}
+
+.shinobi .text-button {
+        border: 0;
+        padding: 4px 0;
+        text-align: left;
+        background: transparent;
+        font-size: 14px;
+        min-width: 0;
+        overflow-wrap: anywhere;
+}
+
+.shinobi .ruled-row > .text-button, .shinobi .inventory-row > .text-button, .shinobi .deck-row > .text-button {
+        flex: 1;
+}
+
+.shinobi .icon-button {
+        border: 0;
+        min-width: 22px;
+        min-height: 24px;
+        width: 24px;
+        padding: 3px;
+        flex: none;
+        font-size: 15px;
+}
+
+.shinobi .icon-button i {
+        font-size: 10px;
+}
+
+.shinobi .grade {
+        padding: 3px 1px;
+        min-width: 34px;
+        flex: none;
+        border: 0;
+        font-weight: 700;
+}
+
+.shinobi .text-button.inactive {
+        opacity: .45;
+        text-decoration: line-through;
+}
+
+.shinobi .combat-box {
+        margin-top: 18px;
+}
+
+.shinobi .combat-actions {
+        margin-left: auto;
+        display: flex;
+        gap: 6px;
+}
+
+.shinobi .combat-actions button {
+        font-family: "Roboto", Arial, sans-serif;
+}
+
+.shinobi .weapons-table {
+        background: none;
+        border: 0;
+        width: 100%;
+        table-layout: fixed;
+        margin: 0 0 15px;
+}
+
+.shinobi table :is(thead,tbody,tr) {
+        background: transparent;
+        color: var(--ink);
+}
+
+.shinobi .weapons-table th {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        padding: 5px 3px;
+        border-bottom: 2px solid #222;
+}
+
+.shinobi .weapons-table td {
+        height: 37px;
+        padding: 4px 3px;
+        border-bottom: 1px solid #777;
+        font-size: 14px;
+        text-align: left;
+        vertical-align: middle;
+}
+
+.shinobi .weapons-table th:first-child {
+        width: 26%;
+}
+
+.shinobi .weapons-table th:nth-child(2) {
+        width: 9%;
+}
+
+.shinobi .weapons-table th:nth-child(3) {
+        width: 12%;
+}
+
+.shinobi .weapons-table th:nth-child(4) {
+        width: 20%;
+}
+
+.shinobi .weapons-table th:last-child {
+        width: 8%;
+}
+
+.shinobi .weapons-table td:last-child {
+        white-space: nowrap;
+}
+
+.shinobi .weapon-actions {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4px;
+        min-width: 52px;
+        white-space: nowrap;
+}
+
+.shinobi .weapon-notes {
+        font-size: 10px !important;
+        line-height: 1.3;
+        overflow-wrap: anywhere;
+}
+
+.shinobi .magazine {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+}
+
+.shinobi input[type=number] {
+        font-variant-numeric: tabular-nums;
+}
+
+.shinobi .magazine input {
+        width: 37px;
+        font-size: 14px;
+        text-align: center;
+}
+
+.shinobi .magazine span {
+        white-space: nowrap;
+}
+
+.shinobi .damage-section {
+        padding: 12px 0;
+}
+
+.shinobi .track-label {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 12px;
+}
+
+.shinobi .track-label input {
+        width: 48px;
+}
+
+.shinobi .state-label {
+        padding: 4px 9px;
+        background: #eee8d8;
+        font-size: 14px;
+}
+
+.shinobi .circle-track {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.shinobi button.circle {
+        border: 2px solid #161616;
+        width: 22px;
+        height: 22px;
+        min-height: 22px;
+        padding: 0;
+        border-radius: 50%;
+        background: transparent;
+        flex: none;
+}
+
+.shinobi button.circle.filled {
+        background: #161616;
+        box-shadow: inset 0 0 0 3px var(--paper);
+}
+
+.shinobi button.circle.boundary {
+        margin-right: 12px;
+        position: relative;
+}
+
+.shinobi button.circle.boundary:after {
+        content: "";
+        position: absolute;
+        right: -12px;
+        top: -5px;
+        width: 1px;
+        height: 30px;
+        background: #333;
+}
+
+.shinobi .damage-legend {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 10px;
+}
+
+.shinobi .stun-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        margin: 20px 0;
+}
+
+.shinobi .stun-line b {
+        font-size: 14px;
+}
+
+.shinobi .stun-line input {
+        width: 40px;
+}
+
+.shinobi .inline-fields {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin: 10px 0;
+}
+
+.shinobi .inline-fields label {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+}
+
+.shinobi .inline-fields input[type=number] {
+        width: 58px;
+}
+
+.shinobi .recovery {
+        font-size: 11px;
+        border-top: 1px solid #ccc7bb;
+        padding-top: 10px;
+}
+
+.shinobi .recovery button {
+        font-size: 10px;
+}
+
+.shinobi .combat-bottom {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 24px;
+        margin-top: 20px;
+}
+
+.shinobi .combat-bottom textarea {
+        height: 40px;
+        min-height: 40px;
+}
+
+.shinobi .ammo-row {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+}
+
+.shinobi .ammo-row > .text-button {
+        flex: 1;
+}
+
+.shinobi .ammo-row > .icon-button {
+        flex: none;
+        width: 24px;
+}
+
+.shinobi .ammo-row input {
+        width: 40px;
+}
+
+.shinobi .tag {
+        border: 1px solid #777;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 2px 5px;
+        margin-left: 6px;
+}
+
+.shinobi .sheet-footer {
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin-top: 18px;
+        border-top: 1px solid #999;
+        padding-top: 10px;
+}
+
+.shinobi .back-grid {
+        display: grid;
+        grid-template-columns:39% 1fr;
+        gap: 18px;
+}
+
+.shinobi .money {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.shinobi .money input {
+        font-size: 24px;
+}
+
+.shinobi .load-meter {
+        display: flex;
+        justify-content: space-between;
+        background: #ebe7dc;
+        padding: 9px;
+        margin: 4px -12px 10px;
+        font-size: 14px;
+        border-block: 1px solid #333;
+}
+
+.shinobi .overloaded {
+        background: #ead2c4;
+        color: #8a2020;
+}
+
+.shinobi .inventory {
+        min-height: 600px;
+}
+
+.shinobi .inventory-row {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        border-bottom: 1px solid #999;
+        min-height: 44px;
+}
+
+.shinobi .inventory-row input[type=number] {
+        width: 34px;
+        text-align: center;
+}
+
+.shinobi .inventory-row small {
+        white-space: nowrap;
+        font-size: 10px;
+}
+
+.shinobi .extra-slots {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 15px;
+}
+
+.shinobi .extra-slots input {
+        width: 50px;
+        margin-left: auto;
+}
+
+.shinobi .movement {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-top: 22px;
+}
+
+.shinobi .background {
+        height: 100px;
+}
+
+.shinobi .large-text {
+        height: 160px;
+}
+
+.shinobi .rank-title {
+        display: flex;
+        gap: 20px;
+        margin: 14px 0;
+        font-size: 16px;
+}
+
+.shinobi .advancement label {
+        font-size: 14px;
+}
+
+.shinobi .contacts {
+        min-height: 200px;
+}
+
+.shinobi .contact-row {
+        display: grid;
+        grid-template-columns:1fr auto;
+        gap: 3px;
+        border-bottom: 1px solid #999;
+        padding: 8px 0;
+}
+
+.shinobi .contact-row small {
+        grid-column: 1;
+}
+
+.shinobi .contact-row > .icon-button {
+        grid-column: 2;
+        grid-row: 1;
+}
+
+.shinobi .cyber-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        font-weight: 800;
+        margin: 6px 0 25px;
+}
+
+.shinobi .deck-row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #aaa;
+        padding: 10px 0;
+        font-size: 14px;
+}
+
+.shinobi .vehicle-heading, .shinobi .item-heading {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 22px;
+}
+
+.shinobi :is(.vehicle-heading,.item-heading) img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+        cursor: pointer;
+}
+
+.shinobi :is(.vehicle-heading,.item-heading) > div {
+        flex: 1;
+}
+
+.shinobi :is(.vehicle-heading,.item-heading) input {
+        font-size: 21px;
+}
+
+.shinobi .paper-grid, .shinobi .item-fields {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 15px;
+}
+
+.shinobi .item-fields {
+        margin: 15px 0;
+}
+
+.shinobi .item-body > label, .shinobi .item-fields label {
+        display: block;
+        font-size: 14px;
+}
+
+.shinobi .item-description {
+        margin-top: 20px;
+}
+
+.shinobi .description-preview {
+        font-size: 14px;
+        line-height: 1.55;
+}
+
+.shinobi details summary {
+        cursor: pointer;
+        font-size: 14px;
+        margin: 12px 0;
+}
+
+.shinobi .library-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 22px 12px;
+}
+
+.shinobi .library-heading small {
+        letter-spacing: 2px;
+        font-size: 9px;
+}
+
+.shinobi .library-filters {
+        display: flex;
+        gap: 12px;
+        margin: 0 22px;
+}
+
+.shinobi .library-filters input {
+        flex: 1;
+}
+
+.shinobi .library-filters select {
+        width: 190px;
+}
+
+.shinobi .library-target {
+        font-size: 14px;
+        margin: 15px 22px;
+}
+
+.shinobi .catalog-grid {
+        overflow: auto;
+        display: grid;
+        grid-template-columns:repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        padding: 8px 22px 22px;
+        align-content: start;
+}
+
+.shinobi .catalog-card {
+        border: 1px solid #b1aa97;
+        border-top: 3px solid #222;
+        padding: 13px;
+        min-height: 154px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        cursor: grab;
+}
+
+.shinobi .catalog-card[hidden] {
+        display: none;
+}
+
+.shinobi .catalog-card img {
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        right: 10px;
+        top: 9px;
+}
+
+.shinobi .catalog-card small {
+        padding-right: 30px;
+        font-size: 10px;
+        min-height: 24px;
+}
+
+.shinobi .catalog-card h2 {
+        margin: 13px 0;
+        flex: 1;
+}
+
+.shinobi .catalog-card h2 button {
+        font-size: 15px;
+        font-weight: 700;
+}
+
+.shinobi .catalog-card footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+}
+
+.shinobi .tool-grid {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 8px;
+}
+
+.shinobi .tool-grid button {
+        min-height: 42px;
+}
+
+.shinobi .generator-list {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 6px;
+}
+
+.shinobi .generator-list button {
+        text-align: left;
+        min-height: 35px;
+}
+
+.shinobi .phase {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        align-items: center;
+        margin-top: 12px;
+}
+
+.shinobi-directory-tools {
+        display: flex;
+        gap: 4px;
+        padding: 5px;
+        flex-wrap: wrap;
+}
+
+.shinobi-directory-tools button {
+        font-size: 11px;
+        flex: 1;
+}
+
+@media (max-width: 850px) {
+        .shinobi .shinobi-scroll {
+                padding: 13px;
+        }
+
+        .shinobi .front-top {
+                grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) 65px;
+                gap: 10px;
+        }
+
+        .shinobi .sheet-brand > span {
+                font-size: 45px;
+        }
+
+        .shinobi .sheet-brand img {
+                width: 55px;
+                height: 55px;
+        }
+
+        .shinobi .damage-legend {
+                gap: 10px;
+        }
+
+        .shinobi .catalog-grid {
+                grid-template-columns:repeat(2, minmax(0, 1fr));
+        }
+
+        .shinobi .back-grid {
+                grid-template-columns:43% 1fr;
+                gap: 12px;
+        }
+}
+
+@media print {
+        .shinobi .sheet-toolbar, .shinobi .icon-button, .shinobi .sheet-footer, .shinobi .combat-actions {
+                display: none !important;
+        }
+
+        .shinobi .shinobi-scroll {
+                overflow: visible;
+        }
+
+        .shinobi .sheet-page {
+                display: block !important;
+                break-after: page;
+        }
+
+        .shinobi .sheet-page[data-sheet-page=cyber] {
+                display: none !important;
+        }
+}
+
+.shinobi :is(h1,h2,h3,h4,h5,h6,label) {
+        color: var(--ink) !important;
+        opacity: 1;
+}
+
+.shinobi :is(.library-heading h1,.library-heading h2,.box > h2,.box > h3) {
+        color: #151515 !important;
+        text-shadow: none;
+}
+
+.shinobi .tools-body > p {
+        color: var(--ink) !important;
+}
+
+.shinobi .window-header .window-title {
+        color: #ddd7c8 !important;
+        font-size: 14px;
+        letter-spacing: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        font-weight: 600;
+        text-shadow: none;
+}
+
+.shinobi .text-button {
+        justify-content: flex-start;
+}

@@ -1,0 +1,55 @@
+<div class="shinobi-shell">
+        <div class="shinobi-scroll tools-body">
+                <header class="library-heading">
+                        <div><small>{{localize "SHINOBI.tools.tabletop"}}</small>
+                                <h2>{{localize "SHINOBI.tools.title"}}</h2></div>
+                </header>{{#if actor}}<p>{{localize "SHINOBI.tools.forCharacter"}}: <b>{{actor.name}}</b></p>{{/if}}
+                <section class="box"><h2>{{localize "SHINOBI.tools.forCharacter"}}</h2>
+                        <div class="tool-grid">
+                                <button type="button" data-action="generate">{{localize
+                                        "SHINOBI.tools.newShinobi"}}</button>
+                                <button type="button" data-action="tool" data-tool="heal">{{localize
+                                        "SHINOBI.tools.medical"}}</button>
+                                <button type="button" data-action="tool" data-tool="fall">{{localize
+                                        "SHINOBI.tools.fall"}}</button>
+                                <button type="button" data-action="tool" data-tool="loyalty">{{localize
+                                        "SHINOBI.ui.loyalty"}}</button>
+                        </div>
+                </section>{{#if isGM}}
+                <section class="box"><h2>{{localize "SHINOBI.tools.forGM"}}</h2>
+                        <div class="tool-grid">
+                                <button type="button" data-action="tool" data-tool="surprise">{{localize
+                                        "SHINOBI.tools.surprise"}}</button>
+                                <button type="button" data-action="tool" data-tool="initiative">{{localize
+                                        "SHINOBI.tools.initiative"}}</button>
+                                <button type="button" data-action="tool" data-tool="opposed">{{localize
+                                        "SHINOBI.tools.opposed"}}</button>
+                                <button type="button" data-action="tool" data-tool="reaction">{{localize
+                                        "SHINOBI.tools.reaction"}}</button>
+                                <button type="button" data-action="tool" data-tool="encounter">{{localize
+                                        "SHINOBI.tools.encounter"}}</button>
+                                <button type="button" data-action="tool" data-tool="scatter">{{localize
+                                        "SHINOBI.tools.scatter"}}</button>
+                                <button type="button" data-action="tool" data-tool="lock">{{localize
+                                        "SHINOBI.tools.lock"}}</button>
+                                <button type="button" data-action="tool" data-tool="patrol">{{localize
+                                        "SHINOBI.tools.patrol"}}</button>
+                                <button type="button" data-action="tool" data-tool="camera">{{localize
+                                        "SHINOBI.tools.camera"}}</button>
+                                <button type="button" data-action="tool" data-tool="corporate">{{localize
+                                        "SHINOBI.tools.corporate"}}</button>
+                                <button type="button" data-action="tool" data-tool="time">{{localize
+                                        "SHINOBI.tools.time"}}</button>
+                        </div>{{#if combat}}
+                                <div class="phase"><span>{{localize "SHINOBI.tools.round"}} {{combat.round}}
+                                        · {{phase}}</span>
+                                        <button type="button" data-action="tool" data-tool="phase">{{localize
+                                                "SHINOBI.tools.nextPhase"}}</button>
+                                </div>{{/if}}</section>{{/if}}
+                <section class="box"><h2>{{localize "SHINOBI.tools.generators"}}</h2>
+                        <div class="generator-list">{{#each tables}}
+                                <button type="button" data-action="rollTable"
+                                        data-code="{{code}}">{{name}}</button>{{/each}}</div>
+                </section>
+        </div>
+</div>
